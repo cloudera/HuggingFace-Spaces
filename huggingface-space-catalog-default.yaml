@@ -18,5 +18,5 @@ entries:
       NUM_CPU_WORKERS: 2
       MEMORY: 16
       NUM_GPU_WORKERS: 0
-      HF_TOKEN: ''
-      HF_AUTH_TOKEN: 'testing'
+      HF_TOKEN: test2
+      HF_AUTH_TOKEN: testing
