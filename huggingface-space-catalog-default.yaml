@@ -14,4 +14,6 @@ entries:
     git_url: "https://huggingface.co/spaces/codellama/codellama-playground"
     is_prototype: true
     is_huggingface_space: true
-    hf_token: ""
+    environment_variables: 
+      NUM_CPU_WORKERS: 2
+      hf_token: ""
