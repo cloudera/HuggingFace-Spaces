@@ -26,16 +26,15 @@ entries:
       HF_TOKEN:
         default: ""
         description: "Hugging Face Token"
-  - title: Llama - no token 
-    label: Llama-no-token
-    short_description: This is a demo to generate text and code with the following Code Llama model (13B).
+  - title: Can You Run It? LLM version 
+    label: Run-llm-version
+    short_description: This is a demo to check if LLM can be executed,
     long_description: >-
-      This is a demo to generate text and code with the following Code Llama model (13B). Please note that this 
-      model is not designed for instruction purposes but for code completion.
+      This is a demo to check if LLM can be executed.
     tags:
-      - Gradio
+      - Streamlit
       - Space
-      - Llama
-    git_url: "https://huggingface.co/spaces/codellama/codellama-playground"
+      - LLM
+    git_url: "https://huggingface.co/spaces/Vokturz/can-it-run-llm"
     is_prototype: true
     is_huggingface_space: true
