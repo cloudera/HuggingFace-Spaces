@@ -1,5 +1,4 @@
 name: HuggingFace
-
 entries:
   - title: Code Llama Playground
     label: Llama
@@ -27,7 +26,6 @@ entries:
       HF_TOKEN:
         default: ""
         description: "Hugging Face Token"
-
   - title: Llama - no token 
     label: Llama-no-token
     short_description: This is a demo to generate text and code with the following Code Llama model (13B).
