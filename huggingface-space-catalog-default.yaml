@@ -19,7 +19,7 @@ entries:
         default: 2
         description: "Number of CPU Workers"
       MEMORY:
-        default: 8
+        default: 16
         description: "Memory in GB"
       NUM_GPU_WORKERS:
         default: 0
