@@ -23,7 +23,7 @@ entries:
         default: 0
         description: "Number of GPU Workers"
       HF_AUTH_TOKEN:
-        default: Provide your token from HuggingFace->Settings->Access Tokens""
+        default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
   - title: Code Llama Playground 13B
     label: Llama-13B
