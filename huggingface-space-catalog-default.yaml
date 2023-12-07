@@ -139,13 +139,13 @@ entries:
     is_huggingface_space: true
     environment_variables: 
       NUM_CPU_WORKERS:
-        default: 2
+        default: 4
         description: "Number of CPU Workers"
       MEMORY:
-        default: 16
+        default: 32
         description: "Memory in GB"
       NUM_GPU_WORKERS:
-        default: 0
+        default: 4
         description: "Number of GPU Workers"
       HF_TOKEN:
         default: ""
