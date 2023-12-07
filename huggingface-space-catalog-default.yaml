@@ -95,8 +95,9 @@ entries:
     label: Mistral-7B
     short_description: In this demo, you can chat with Mistral-7B-Instruct model.
     long_description: >-
-      In this demo, you can chat with Mistral-7B-Instruct model. Please note that this 
-      model is not designed for instruction purposes but for code completion.
+      In this demo, you can chat with Mistral-7B-Instruct model. Mistral-7B-v0.1 is a 
+      decoder-based LM with the following architectural choices - Sliding Window Attention, 
+      GQA (Grouped Query Attention) & Byte-fallback BPE tokenizer.
     tags:
       - Gradio
       - Space
