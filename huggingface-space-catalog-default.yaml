@@ -1,7 +1,32 @@
 name: HuggingFace
 entries:
-  - title: Code Llama Playground
-    label: Llama
+  - title: IDEFICS Playground
+    label: Idefics
+    short_description: This demo showcases IDEFICS, a open-access large visual language model.
+    long_description: >-
+      This demo showcases IDEFICS, a open-access large visual language model. Like GPT-4, the multimodal model accepts arbitrary sequences of image and text inputs and produces text outputs. IDEFICS can answer questions about images, describe visual content, create stories grounded in multiple images, etc. IDEFICS (which stands for Image-aware Decoder Enhanced à la Flamingo with Interleaved Cross-attentionS) is an open-access reproduction of Flamingo, a closed-source visual language model developed by Deepmind. IDEFICS was built solely on publicly available data and models. It is currently the only visual language model of this scale (80 billion parameters) that is available in open-access.
+    tags:
+      - Gradio
+      - Space
+      - Idefics
+    git_url: "https://huggingface.co/spaces/HuggingFaceM4/idefics_playground"
+    is_prototype: true
+    is_huggingface_space: true
+    environment_variables: 
+      NUM_CPU_WORKERS:
+        default: 2
+        description: "Number of CPU Workers"
+      MEMORY:
+        default: 16
+        description: "Memory in GB"
+      NUM_GPU_WORKERS:
+        default: 0
+        description: "Number of GPU Workers"
+      HF_AUTH_TOKEN:
+        default: ""
+        description: "Hugging Face Token"
+  - title: Code Llama Playground 13B
+    label: Llama-13B
     short_description: This is a demo to generate text and code with the following Code Llama model (13B).
     long_description: >-
       This is a demo to generate text and code with the following Code Llama model (13B). Please note that this 
@@ -10,6 +35,7 @@ entries:
       - Gradio
       - Space
       - Llama
+      - 13B
     git_url: "https://huggingface.co/spaces/codellama/codellama-playground"
     is_prototype: true
     is_huggingface_space: true
@@ -26,6 +52,107 @@ entries:
       HF_TOKEN:
         default: ""
         description: "Hugging Face Token"
+  - title: Open LLM Leaderboard
+    label: open-LLM
+    short_description: The Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
+    long_description: >-
+      The Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots. Submit a model for automated 
+      evaluation on the GPU cluster on the "Submit" page! The leaderboard's backend runs the great Eleuther AI 
+      Language Model Evaluation Harness - https://github.com/EleutherAI/lm-evaluation-harness
+    tags:
+      - Gradio
+      - Space
+      - LLM
+    git_url: "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard"
+    is_prototype: true
+    is_huggingface_space: true
+    environment_variables: 
+      NUM_CPU_WORKERS:
+        default: 2
+        description: "Number of CPU Workers"
+      MEMORY:
+        default: 16
+        description: "Memory in GB"
+      NUM_GPU_WORKERS:
+        default: 0
+        description: "Number of GPU Workers"
+      H4_TOKEN:
+        default: ""
+        description: "Hugging Face Token"
+      HF_TOKEN:
+        default: ""
+        description: "Hugging Face Token"
+      HF_HOME:
+        default: "/data"
+        description: "Hugging Face Token"
+      IS_PUBLIC:
+        default: True
+        description: "If this should be publicly accessible"
+      SPACE_CI_SECRET:
+        default: ""
+        description: "Spaces CI Secret"
+  - title: Mistral 7B Instruct
+    label: Mistral-7B
+    short_description: In this demo, you can chat with Mistral-7B-Instruct model.
+    long_description: >-
+      In this demo, you can chat with Mistral-7B-Instruct model. Mistral-7B-v0.1 is a 
+      decoder-based LM with the following architectural choices: Sliding Window Attention, 
+      GQA (Grouped Query Attention) & Byte-fallback BPE tokenizer.
+    tags:
+      - Gradio
+      - Space
+      - Mistral
+      - 7B
+    git_url: "https://huggingface.co/spaces/osanseviero/mistral-super-fast"
+    is_prototype: true
+    is_huggingface_space: true
+    environment_variables: 
+      NUM_CPU_WORKERS:
+        default: 2
+        description: "Number of CPU Workers"
+      MEMORY:
+        default: 16
+        description: "Memory in GB"
+      NUM_GPU_WORKERS:
+        default: 0
+        description: "Number of GPU Workers"
+      HF_TOKEN:
+        default: ""
+        description: "Hugging Face Token"
+      HUGGING_FACE_HUB_TOKEN:
+        default: ""
+        description: "Hugging Face Token"
+  - title: Chat with DeepSeek Coder 33B
+    label: DeepSeek-33B
+    short_description: In this demo, you can make use of DeepSeek 33B parameters model.
+    long_description: >-
+      In this demo, you can chat with DeepSeek-33B model which is a 33B parameters 
+      model that has been fine-tuned for chat instructions. More details can be found 
+      here - https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
+    tags:
+      - Gradio
+      - Space
+      - DeepSeek
+      - 33B
+    git_url: "https://huggingface.co/spaces/osanseviero/mistral-super-fast"
+    is_prototype: true
+    is_huggingface_space: true
+    environment_variables: 
+      NUM_CPU_WORKERS:
+        default: 2
+        description: "Number of CPU Workers"
+      MEMORY:
+        default: 16
+        description: "Memory in GB"
+      NUM_GPU_WORKERS:
+        default: 0
+        description: "Number of GPU Workers"
+      HF_TOKEN:
+        default: ""
+        description: "Hugging Face Token"
+      HUGGING_FACE_HUB_TOKEN:
+        default: ""
+        description: "Hugging Face Token"
   - title: Can You Run It? LLM version 
     label: Run-llm-version
     short_description: This is a demo to check if LLM can be executed,
@@ -37,4 +164,3 @@ entries:
       - LLM
     git_url: "https://huggingface.co/spaces/Vokturz/can-it-run-llm"
     is_prototype: true
-    is_huggingface_space: true
