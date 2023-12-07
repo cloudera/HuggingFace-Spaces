@@ -164,3 +164,4 @@ entries:
       - LLM
     git_url: "https://huggingface.co/spaces/Vokturz/can-it-run-llm"
     is_prototype: true
+    is_huggingface_space: true
