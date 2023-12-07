@@ -23,7 +23,7 @@ entries:
         default: 0
         description: "Number of GPU Workers"
       HF_AUTH_TOKEN:
-        default: ""
+        default: Provide your token from HuggingFace->Settings->Access Tokens""
         description: "Hugging Face Token"
   - title: Code Llama Playground 13B
     label: Llama-13B
@@ -50,7 +50,7 @@ entries:
         default: 0
         description: "Number of GPU Workers"
       HF_TOKEN:
-        default: ""
+        default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
   - title: Open LLM Leaderboard
     label: open-LLM
@@ -63,7 +63,7 @@ entries:
       - Gradio
       - Space
       - LLM
-    git_url: "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard"
+    git_url: "https://huggingface.co/spaces/smothiki/open_llm_leaderboard"
     is_prototype: true
     is_huggingface_space: true
     environment_variables: 
@@ -76,21 +76,9 @@ entries:
       NUM_GPU_WORKERS:
         default: 0
         description: "Number of GPU Workers"
-      H4_TOKEN:
-        default: ""
-        description: "Hugging Face Token"
       HF_TOKEN:
-        default: ""
+        default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
-      HF_HOME:
-        default: "/data"
-        description: "Hugging Face Token"
-      IS_PUBLIC:
-        default: True
-        description: "If this should be publicly accessible"
-      SPACE_CI_SECRET:
-        default: ""
-        description: "Spaces CI Secret"
   - title: Mistral 7B Instruct
     label: Mistral-7B
     short_description: In this demo, you can chat with Mistral-7B-Instruct model.
@@ -117,10 +105,10 @@ entries:
         default: 0
         description: "Number of GPU Workers"
       HF_TOKEN:
-        default: ""
+        default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
       HUGGING_FACE_HUB_TOKEN:
-        default: ""
+        default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
   - title: Chat with DeepSeek Coder 33B
     label: DeepSeek-33B
@@ -148,10 +136,10 @@ entries:
         default: 4
         description: "Number of GPU Workers"
       HF_TOKEN:
-        default: ""
+        default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
       HUGGING_FACE_HUB_TOKEN:
-        default: ""
+        default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
   - title: Can You Run It? LLM version 
     label: Run-llm-version
