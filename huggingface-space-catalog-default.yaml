@@ -13,15 +13,15 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     environment_variables: 
-      NUM_CPU_WORKERS:
+      cpu:
         default: 2
-        description: "Number of CPU Workers"
-      MEMORY:
+        description: "Number of CPUs"
+      memory:
         default: 16
         description: "Memory in GB"
-      NUM_GPU_WORKERS:
+      gpu:
         default: 0
-        description: "Number of GPU Workers"
+        description: "Number of GPUs"
       HF_AUTH_TOKEN:
         default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
@@ -40,15 +40,15 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     environment_variables: 
-      NUM_CPU_WORKERS:
+      cpu:
         default: 2
-        description: "Number of CPU Workers"
-      MEMORY:
+        description: "Number of CPUs"
+      memory:
         default: 16
         description: "Memory in GB"
-      NUM_GPU_WORKERS:
+      gpu:
         default: 0
-        description: "Number of GPU Workers"
+        description: "Number of GPUs"
       HF_TOKEN:
         default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
@@ -67,15 +67,15 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     environment_variables: 
-      NUM_CPU_WORKERS:
+      cpu:
         default: 2
-        description: "Number of CPU Workers"
-      MEMORY:
+        description: "Number of CPUs"
+      memory:
         default: 16
         description: "Memory in GB"
-      NUM_GPU_WORKERS:
+      gpu:
         default: 0
-        description: "Number of GPU Workers"
+        description: "Number of GPUs"
       HF_TOKEN:
         default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
@@ -95,15 +95,15 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     environment_variables: 
-      NUM_CPU_WORKERS:
+      cpu:
         default: 2
-        description: "Number of CPU Workers"
-      MEMORY:
+        description: "Number of CPUs"
+      memory:
         default: 16
         description: "Memory in GB"
-      NUM_GPU_WORKERS:
+      gpu:
         default: 0
-        description: "Number of GPU Workers"
+        description: "Number of GPUs"
       HF_TOKEN:
         default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
@@ -126,15 +126,15 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     environment_variables: 
-      NUM_CPU_WORKERS:
+      cpu:
         default: 4
-        description: "Number of CPU Workers"
-      MEMORY:
+        description: "Number of CPUs"
+      memory:
         default: 32
         description: "Memory in GB"
-      NUM_GPU_WORKERS:
+      gpu:
         default: 4
-        description: "Number of GPU Workers"
+        description: "Number of GPUs"
       HF_TOKEN:
         default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
