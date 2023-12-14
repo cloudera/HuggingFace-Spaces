@@ -122,7 +122,7 @@ entries:
       - Space
       - DeepSeek
       - 33B
-    git_url: "https://huggingface.co/spaces/osanseviero/mistral-super-fast"
+    git_url: "https://huggingface.co/spaces/deepseek-ai/deepseek-coder-33b-instruct"
     is_prototype: true
     is_huggingface_space: true
     environment_variables: 
