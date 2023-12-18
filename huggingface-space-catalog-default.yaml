@@ -80,37 +80,6 @@ entries:
       HF_TOKEN:
         default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
-  - title: Mistral 7B Instruct
-    label: Mistral-7B
-    short_description: In this demo, you can chat with Mistral-7B-Instruct model.
-    long_description: >-
-      In this demo, you can chat with Mistral-7B-Instruct model. Mistral-7B-v0.1 is a 
-      decoder-based LM with the following architectural choices - Sliding Window Attention, 
-      GQA (Grouped Query Attention) & Byte-fallback BPE tokenizer.
-    tags:
-      - Gradio
-      - Space
-      - Llama
-      - 13B
-    git_url: "https://huggingface.co/spaces/osanseviero/mistral-super-fast"
-    is_prototype: true
-    is_huggingface_space: true
-    environment_variables: 
-      cpu:
-        default: 2
-        description: "Number of CPUs"
-      memory:
-        default: 16
-        description: "Memory in GB"
-      gpu:
-        default: 0
-        description: "Number of GPUs"
-      HF_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token"
-      HUGGING_FACE_HUB_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token"
   - title: Chat with DeepSeek Coder 33B
     label: DeepSeek-33B
     short_description: In this demo, you can make use of DeepSeek 33B parameters model.
