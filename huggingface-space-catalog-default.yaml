@@ -12,6 +12,7 @@ entries:
     git_url: "https://huggingface.co/spaces/HuggingFaceM4/idefics_playground"
     is_prototype: true
     is_huggingface_space: true
+    enabled: false
     environment_variables: 
       cpu:
         default: 2
