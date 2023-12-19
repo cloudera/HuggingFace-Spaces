@@ -142,15 +142,3 @@ entries:
       HUGGING_FACE_HUB_TOKEN:
         default: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
-  - title: Can You Run It? LLM version 
-    label: Run-llm-version
-    short_description: This is a demo to check if LLM can be executed,
-    long_description: >-
-      This is a demo to check if LLM can be executed.
-    tags:
-      - Streamlit
-      - Space
-      - LLM
-    git_url: "https://huggingface.co/spaces/Vokturz/can-it-run-llm"
-    is_prototype: true
-    is_huggingface_space: true
