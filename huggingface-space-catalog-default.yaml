@@ -25,9 +25,9 @@ entries:
         description: "Number of GPUs"
       HF_AUTH_TOKEN:
         default: ""
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
         required: true
-        tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token. Get from HuggingFace->Settings->Access Tokens"
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Code Llama Playground 13B
     label: Llama-13B
     short_description: This is a demo to generate text and code with the following Code Llama model (13B).
@@ -54,9 +54,9 @@ entries:
         description: "Number of GPUs"
       HF_TOKEN:
         default: ""
-        description: "Hugging Face Token. Get from HuggingFace->Settings->Access Tokens"
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
         required: true
-        tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Open LLM Leaderboard
     label: open-LLM
     short_description: The Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
@@ -83,9 +83,9 @@ entries:
         description: "Number of GPUs"
       HF_TOKEN:
         default: ""
-        description: "Hugging Face Token. Get from HuggingFace->Settings->Access Tokens"
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
         required: true
-        tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Mistral 7B Instruct
     label: Mistral-7B
     short_description: In this demo, you can chat with Mistral-7B-Instruct model.
@@ -112,11 +112,15 @@ entries:
         default: 0
         description: "Number of GPUs"
       HF_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token"
+        default: ""
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
+        required: true
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
       HUGGING_FACE_HUB_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token"
+        default: ""
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
+        required: true
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Chat with DeepSeek Coder 33B
     label: DeepSeek-33B
     short_description: In this demo, you can make use of DeepSeek 33B parameters model.
@@ -143,11 +147,15 @@ entries:
         default: 4
         description: "Number of GPUs"
       HF_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token"
+        default: ""
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
+        required: true
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
       HUGGING_FACE_HUB_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token"
+        default: ""
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
+        required: true
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Can You Run It? LLM version 
     label: Run-llm-version
     short_description: This is a demo to check if LLM can be executed,
