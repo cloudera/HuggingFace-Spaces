@@ -27,7 +27,7 @@ entries:
         default: ""
         required: true
         tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
-        description: "Hugging Face Token"
+        description: "Hugging Face Token. Get from HuggingFace->Settings->Access Tokens"
   - title: Code Llama Playground 13B
     label: Llama-13B
     short_description: This is a demo to generate text and code with the following Code Llama model (13B).
@@ -54,7 +54,7 @@ entries:
         description: "Number of GPUs"
       HF_TOKEN:
         default: ""
-        description: "Hugging Face Token"
+        description: "Hugging Face Token. Get from HuggingFace->Settings->Access Tokens"
         required: true
         tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
   - title: Open LLM Leaderboard
@@ -83,7 +83,7 @@ entries:
         description: "Number of GPUs"
       HF_TOKEN:
         default: ""
-        description: "Hugging Face Token"
+        description: "Hugging Face Token. Get from HuggingFace->Settings->Access Tokens"
         required: true
         tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
   - title: Mistral 7B Instruct
