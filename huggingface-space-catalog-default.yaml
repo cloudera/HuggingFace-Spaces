@@ -24,7 +24,9 @@ entries:
         default: 0
         description: "Number of GPUs"
       HF_AUTH_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
+        default: ""
+        required: true
+        tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
         description: "Hugging Face Token"
   - title: Code Llama Playground 13B
     label: Llama-13B
@@ -51,8 +53,10 @@ entries:
         default: 0
         description: "Number of GPUs"
       HF_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
+        default: ""
         description: "Hugging Face Token"
+        required: true
+        tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
   - title: Open LLM Leaderboard
     label: open-LLM
     short_description: The Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
@@ -78,8 +82,10 @@ entries:
         default: 0
         description: "Number of GPUs"
       HF_TOKEN:
-        default: "Provide your token from HuggingFace->Settings->Access Tokens"
+        default: ""
         description: "Hugging Face Token"
+        required: true
+        tooltip: "Provide your token from HuggingFace->Settings->Access Tokens"
   - title: Mistral 7B Instruct
     label: Mistral-7B
     short_description: In this demo, you can chat with Mistral-7B-Instruct model.
