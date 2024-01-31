@@ -149,12 +149,12 @@ entries:
       HF_TOKEN:
         default: ""
         description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
-        required: false
+        required: true
         tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
       HUGGING_FACE_HUB_TOKEN:
         default: ""
         description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
-        required: false
+        required: true
         tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Can You Run It? LLM version 
     label: Run-llm-version
