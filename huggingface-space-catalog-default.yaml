@@ -154,7 +154,7 @@ entries:
       HUGGING_FACE_HUB_TOKEN:
         default: ""
         description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
-        required: true
+        required: false
         tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Can You Run It? LLM version 
     label: Run-llm-version
