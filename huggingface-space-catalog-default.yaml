@@ -94,7 +94,7 @@ entries:
       decoder-based LM with the following architectural choices - Sliding Window Attention, 
       GQA (Grouped Query Attention) & Byte-fallback BPE tokenizer.
     image_path: >-
-      https://github.com/cloudera/HuggingFace-Spaces/blob/master/images/mistral-7B.png
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/mistral-7B.png
     tags:
       - Gradio
       - Space
