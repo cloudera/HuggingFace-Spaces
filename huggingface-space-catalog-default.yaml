@@ -64,6 +64,8 @@ entries:
       The Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots. Submit a model for automated 
       evaluation on the GPU cluster on the "Submit" page! The leaderboard's backend runs the great Eleuther AI 
       Language Model Evaluation Harness - https://github.com/EleutherAI/lm-evaluation-harness
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/llm-leaderboard.png
     tags:
       - Gradio
       - Space
