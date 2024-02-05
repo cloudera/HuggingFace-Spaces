@@ -93,6 +93,8 @@ entries:
       In this demo, you can chat with Mistral-7B-Instruct model. Mistral-7B-v0.1 is a 
       decoder-based LM with the following architectural choices - Sliding Window Attention, 
       GQA (Grouped Query Attention) & Byte-fallback BPE tokenizer.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/blob/master/images/mistral-7B.png
     tags:
       - Gradio
       - Space
