@@ -4,7 +4,7 @@ entries:
     label: Idefics
     short_description: This demo showcases IDEFICS, a open-access large visual language model.
     long_description: >-
-      This demo showcases IDEFICS, a open-access large visual language model. Like GPT-4, the multimodal model accepts arbitrary sequences of image and text inputs and produces text outputs. IDEFICS can answer questions about images, describe visual content, create stories grounded in multiple images, etc. IDEFICS (which stands for Image-aware Decoder Enhanced à la Flamingo with Interleaved Cross-attentionS) is an open-access reproduction of Flamingo, a closed-source visual language model developed by Deepmind. IDEFICS was built solely on publicly available data and models. It is currently the only visual language model of this scale (80 billion parameters) that is available in open-access.
+      IDEFICS, short for Image-aware Decoder Enhanced à la Flamingo with Interleaved Cross-attentionS, is an 80-billion parameter open-access visual language model. It can process both image and text inputs, enabling capabilities like image-based question answering, visual content description, and storytelling with multiple images. IDEFICS is a reproduction of Deepmind's closed-source Flamingo model, built using publicly available data. The model variants in this demo have been fine-tuned for conversational settings.      
     tags:
       - Gradio
       - Space
@@ -32,8 +32,7 @@ entries:
     label: Llama-13B
     short_description: This is a demo to generate text and code with the following Code Llama model (13B).
     long_description: >-
-      This is a demo to generate text and code with the following Code Llama model (13B). Please note that this 
-      model is not designed for instruction purposes but for code completion.
+      Code Llama Playground showcases the 13-billion parameter Code Llama model, focused on text and code generation. It's primarily designed for code completion rather than instructional purposes or interactive chatting. Additional insights into the model's capabilities and design can be found in the associated blog post and paper.
     tags:
       - Gradio
       - Space
@@ -61,9 +60,7 @@ entries:
     label: open-LLM
     short_description: The Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
     long_description: >-
-      The Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots. Submit a model for automated 
-      evaluation on the GPU cluster on the "Submit" page! The leaderboard's backend runs the great Eleuther AI 
-      Language Model Evaluation Harness - https://github.com/EleutherAI/lm-evaluation-harness
+      The 🤗 Open LLM Leaderboard is a platform dedicated to tracking, ranking, and evaluating open Large Language Models (LLMs) and chatbots. It offers a system for automated model evaluation on the 🤗 GPU cluster. The leaderboard uses Eleuther AI's Language Model Evaluation Harness, detailed in the "About" page.
     image_path: >-
       https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/llm-leaderboard.png
     tags:
@@ -92,9 +89,7 @@ entries:
     label: Mistral-7B
     short_description: In this demo, you can chat with Mistral-7B-Instruct model.
     long_description: >-
-      In this demo, you can chat with Mistral-7B-Instruct model. Mistral-7B-v0.1 is a 
-      decoder-based LM with the following architectural choices - Sliding Window Attention, 
-      GQA (Grouped Query Attention) & Byte-fallback BPE tokenizer.
+      Mistral 7B Instruct showcases Mistral-7B-v0.1, Mistral AI's first Large Language Model (LLM), featuring a decoder-based architecture. Key features include Sliding Window Attention with an 8k context length, Grouped Query Attention (GQA) for faster inference, and a byte-fallback BPE tokenizer. The Mistral-7B-Instruct-v0.1 variant is instruction fine-tuned for chat-based interactions. Both models are available under the Apache 2.0 license. Further information is in the release blog post.
     image_path: >-
       https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/mistral-7B.png
     tags:
@@ -129,9 +124,7 @@ entries:
     label: DeepSeek-33B
     short_description: In this demo, you can make use of DeepSeek 33B parameters model.
     long_description: >-
-      In this demo, you can chat with DeepSeek-33B model which is a 33B parameters 
-      model that has been fine-tuned for chat instructions. More details can be found 
-      here - https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
+      DeepSeek-33B-Chat features the DeepSeek-Coder model, a 33-billion parameter code model fine-tuned for chat instructions. This space is dedicated to demonstrating its capabilities in handling chat-based coding queries.
     tags:
       - Gradio
       - Space
@@ -164,7 +157,7 @@ entries:
     label: Run-llm-version
     short_description: This is a demo to check if LLM can be executed,
     long_description: >-
-      This is a demo to check if LLM can be executed.
+      Can you run it? LLM version" is a tool designed to help users assess the feasibility of training or running large language models (LLMs). It provides guidance on the necessary GPU resources and quantization levels for different LLMs.
     tags:
       - Streamlit
       - Space
