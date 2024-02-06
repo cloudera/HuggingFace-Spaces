@@ -33,6 +33,8 @@ entries:
     short_description: This is a demo to generate text and code with the following Code Llama model (13B).
     long_description: >-
       Code Llama Playground showcases the 13-billion parameter Code Llama model, focused on text and code generation. It's primarily designed for code completion rather than instructional purposes or interactive chatting. Additional insights into the model's capabilities and design can be found in the associated blog post and paper.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/codellama-playground.png
     tags:
       - Gradio
       - Space
