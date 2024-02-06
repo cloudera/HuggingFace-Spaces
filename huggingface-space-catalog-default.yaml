@@ -125,6 +125,8 @@ entries:
     short_description: In this demo, you can make use of DeepSeek 33B parameters model.
     long_description: >-
       DeepSeek-33B-Chat features the DeepSeek-Coder model, a 33-billion parameter code model fine-tuned for chat instructions. This space is dedicated to demonstrating its capabilities in handling chat-based coding queries.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/deepseek-33b-chat.png
     tags:
       - Gradio
       - Space
@@ -158,6 +160,8 @@ entries:
     short_description: This is a demo to check if LLM can be executed,
     long_description: >-
       Can you run it? LLM version" is a tool designed to help users assess the feasibility of training or running large language models (LLMs). It provides guidance on the necessary GPU resources and quantization levels for different LLMs.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/run-llm-version.png
     tags:
       - Streamlit
       - Space
