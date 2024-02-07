@@ -13,6 +13,7 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     enabled: false
+    is_new: true
     environment_variables: 
       cpu:
         default: 2
@@ -43,6 +44,7 @@ entries:
     git_url: "https://huggingface.co/spaces/codellama/codellama-playground"
     is_prototype: true
     is_huggingface_space: true
+    is_new: true
     environment_variables: 
       cpu:
         default: 2
@@ -72,6 +74,7 @@ entries:
     git_url: "https://huggingface.co/spaces/smothiki/open_llm_leaderboard"
     is_prototype: true
     is_huggingface_space: true
+    is_new: true
     environment_variables: 
       cpu:
         default: 2
@@ -102,6 +105,7 @@ entries:
     git_url: "https://huggingface.co/spaces/osanseviero/mistral-super-fast"
     is_prototype: true
     is_huggingface_space: true
+    is_new: true
     environment_variables: 
       cpu:
         default: 2
@@ -137,6 +141,7 @@ entries:
     git_url: "https://huggingface.co/spaces/deepseek-ai/deepseek-coder-33b-instruct"
     is_prototype: true
     is_huggingface_space: true
+    is_new: true
     environment_variables: 
       cpu:
         default: 4
@@ -171,3 +176,4 @@ entries:
     git_url: "https://huggingface.co/spaces/Vokturz/can-it-run-llm"
     is_prototype: true
     is_huggingface_space: true
+    is_new: true
