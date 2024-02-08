@@ -60,36 +60,6 @@ entries:
         description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
         required: true
         tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
-  - title: Open LLM Leaderboard
-    label: open-LLM
-    short_description: Compare and select top performing models in the leaderboard.
-    long_description: >-
-      The 🤗 Open LLM Leaderboard is a platform dedicated to tracking, ranking, and evaluating open Large Language Models (LLMs) and chatbots. It offers a system for automated model evaluation on the 🤗 GPU cluster. The leaderboard uses Eleuther AI's Language Model Evaluation Harness, detailed in the "About" page.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/llm-leaderboard.png
-    tags:
-      - Gradio
-      - Space
-      - LLM
-    git_url: "https://huggingface.co/spaces/smothiki/open_llm_leaderboard"
-    is_prototype: true
-    is_huggingface_space: true
-    is_new: true
-    environment_variables: 
-      cpu:
-        default: 2
-        description: "Number of CPUs"
-      memory:
-        default: 16
-        description: "Memory in GB"
-      gpu:
-        default: 0
-        description: "Number of GPUs"
-      HF_TOKEN:
-        default: ""
-        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
-        required: true
-        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
   - title: Mistral 7B Instruct
     label: Mistral-7B
     short_description: Chatbot using Mistral 7B model with features like Sliding Window Attention & Grouped Query Attention for faster inference.
@@ -177,3 +147,33 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     is_new: true
+  - title: Open LLM Leaderboard
+    label: open-LLM
+    short_description: Compare and select top performing models in the leaderboard.
+    long_description: >-
+      The 🤗 Open LLM Leaderboard is a platform dedicated to tracking, ranking, and evaluating open Large Language Models (LLMs) and chatbots. It offers a system for automated model evaluation on the 🤗 GPU cluster. The leaderboard uses Eleuther AI's Language Model Evaluation Harness, detailed in the "About" page.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/llm-leaderboard.png
+    tags:
+      - Gradio
+      - Space
+      - LLM
+    git_url: "https://huggingface.co/spaces/smothiki/open_llm_leaderboard"
+    is_prototype: true
+    is_huggingface_space: true
+    is_new: true
+    environment_variables: 
+      cpu:
+        default: 2
+        description: "Number of CPUs"
+      memory:
+        default: 16
+        description: "Memory in GB"
+      gpu:
+        default: 0
+        description: "Number of GPUs"
+      HF_TOKEN:
+        default: ""
+        description: "Hugging Face Token (HuggingFace->Settings->Access Tokens)"
+        required: true
+        tooltip: "Get your token from HuggingFace->Settings->Access Tokens"
