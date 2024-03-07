@@ -70,8 +70,8 @@ entries:
     tags:
       - Gradio
       - Space
-      - Llama
-      - 13B
+      - Mistral
+      - 7B
     git_url: "https://huggingface.co/spaces/osanseviero/mistral-super-fast"
     is_prototype: true
     is_huggingface_space: true
