@@ -1,0 +1,24 @@
+name: Models
+
+entries:
+  - name: StarCoder
+    source: Nvidia
+    repository: ohlfw0olaadg/ea-participants/starcoder
+    version: STARCODER-15.5B-8K-FP16-1-A100.24.01
+    application: NLP
+    framework: NeMo
+    precision: float16
+  - name: NV-GPT-43B-instruct
+    source: Nvidia
+    repository: ohlfw0olaadg/ea-participants/nv-gpt-43b-instruct
+    version: NV-GPT-43B-instruct-4K-sft-FP16-2-A100.24.01
+    application: Other
+    framework: Other
+    precision: float16
+  - name: mixtral-8x7b
+    source: Nvidia
+    repository: ohlfw0olaadg/ea-participants/mixtral-8x7b
+    version: MIXTRAL-8x7b-INSTRUCT-2-A100.24.01
+    application: Other
+    framework: Other
+    precision: FP16
