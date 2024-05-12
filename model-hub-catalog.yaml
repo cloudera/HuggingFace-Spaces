@@ -1,21 +1,81 @@
 name: Models
 
 entries:
-  - name: StarCoder
-    source: Nvidia
-    repo_id: ohlfw0olaadg/ea-participants/starcoder:STARCODER-15.5B-8K-FP16-1-A100.24.01
+  - name: Llama-2-13b
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/llama-2-13b:LLAMA-2-13B-4K-FP16-1-A100.24.01
     framework: NeMo
-    application: NLP
+    application: Other
     precision: float16
-  - name: NV-GPT-43B-instruct
-    source: Nvidia
-    repo_id: ohlfw0olaadg/ea-participants/nv-gpt-43b-instruct:NV-GPT-43B-instruct-4K-sft-FP16-2-A100.24.01
+  - name: Llama-2-70b-Chat
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/llama-2-70b-chat:LLAMA-2-70B-CHAT-4K-FP16-4-A100.24.01
+    framework: Other
+    application: Other
+    precision: float16
+  - name: Llama-2-13b-Chat
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/llama-2-13b-chat:LLAMA-2-13B-CHAT-4K-FP16-1-A100.24.01
     framework: Other
     application: Other
     precision: float16
   - name: mixtral-8x7b
-    source: Nvidia
+    source: NGC
     repo_id: ohlfw0olaadg/ea-participants/mixtral-8x7b:MIXTRAL-8x7b-INSTRUCT-2-A100.24.01
+    framework: NeMo
+    application: Other
+    precision: FP16
+  - name: NV-GPT-43B-chat
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/nv-gpt-43b-chat:NV-GPT-43B-chat-4K-steerlm-FP16-2-A100.24.01
+    framework: Other
+    application: Other
+    precision: float16
+  - name: NV-GPT-43B-instruct
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/nv-gpt-43b-instruct:NV-GPT-43B-instruct-4K-sft-FP16-2-A100.24.01
+    framework: Other
+    application: Other
+    precision: float16
+  - name: StarCoderPlus
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/starcoderplus:STARCODERPLUS-15.5B-8K-FP16-1-A100.24.01
+    framework: NeMo
+    application: Other
+    precision: float16
+  - name: mistral-7b-instruct
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/mistral-7b-instruct:MISTRAL-7b-INSTRUCT-1-A100.24.01
     framework: Other
     application: Other
     precision: FP16
+  - name: StarCoder
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/starcoder:STARCODER-15.5B-8K-FP16-1-A100.24.01
+    framework: Other
+    application: NATURAL_LANGUAGE_PROCESSING
+    precision: float16
+  - name: Llama-2-7b
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/llama-2-7b:LLAMA-2-7B-4K-FP16-1-A100.24.01
+    framework: NeMo
+    application: NATURAL_LANGUAGE_PROCESSING
+    precision: float16
+  - name: NV-GPT-8B-base
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/nv-gpt-8b-base:NV-GPT-8B-base-4K-FP16-1-A100.24.01
+    framework: Other
+    application: Other
+    precision: float16
+  - name: Llama-2-7b-Chat
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/llama-2-7b-chat:LLAMA-2-7B-CHAT-4K-FP16-1-A100.24.01
+    framework: Other
+    application: Other
+    precision: float16
+  - name: Llama-2-70b
+    source: NGC
+    repo_id: ohlfw0olaadg/ea-participants/llama-2-70b:LLAMA-2-70B-4K-FP16-4-A100.24.01
+    framework: Other
+    application: Other
+    precision: float16
