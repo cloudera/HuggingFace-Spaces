@@ -1,17 +1,16 @@
 # The model spec is designed keeping in mind both the HF and NGC APIs and tried to capture minimal information from both the APIs.
 models:
-  - name: llama3 instruct 
-    displayName: Llama 3
+  - name: llama3 Instruct
+    displayName: Llama 3 Instruct
     type: NGC
-    description: Llama-3 instruct model published by Meta
+    description: Llama 3 is a large language AI model comprising a collection of models capable of generating text and code in response to prompts. Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. Token counts refer to pretraining data only. Both the 8 and 70B versions use Grouped-Query Attention (GQA) for improved inference scalability. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.
     modelVariants:
-      - variantId: llama 3 8b instruct
-        displayName: 8b
+      - variantId: Llama 3 8B Instruct
         source:
           URL: https://catalog.ngc.nvidia.com/orgs/nim/teams/meta/models/llama3-8b-instruct
         optimizationProfiles:
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-l40sx1-fp8-throughput
-          displayName: llama 3 8b instruct l40sx1 fp8 throughput
+          displayName: Llama 3 8B Instruct L40Sx1 FP8 Throughput
           framework: TensorRT-LLM
           ngcMetadata: MDllMmY4ZTY4Zjc4Y2U5NGJmNzlkMTViNDBhMjEzMzNjZWE1ZDA5ZGJlMDFlZGU2M2Y2Yzk1N2Y0ZmNmYWI3YjoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBMNDBTCiAgICBncHVfZGV2aWNlOiAyNmI1OjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDgKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMScKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWw0MHN4MS1mcDgtdGhyb3VnaHB1dAogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
           sha: 09e2f8e68f78ce94bf79d15b40a21333cea5d09dbe01ede63f6c957f4fcfab7b
@@ -19,9 +18,9 @@ models:
           latestVersionSizeInBytes: 9094013963
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: L40S
           - key: COUNT
@@ -34,16 +33,16 @@ models:
             value: False
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-h100x1-fp8-throughput
           framework: TensorRT-LLM
-          displayName: llama 3 8b instruct h100x1 fp8 throughput
+          displayName: Llama 3 8B Instruct H100x1 FP8 Throughput
           sha: 30b562864b5b1e3b236f7b6d6a0998efbed491e4917323d04590f715aa9897dc
           ngcMetadata: MzBiNTYyODY0YjViMWUzYjIzNmY3YjZkNmEwOTk4ZWZiZWQ0OTFlNDkxNzMyM2QwNDU5MGY3MTVhYTk4OTdkYzoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBIMTAwCiAgICBncHVfZGV2aWNlOiAyMzMwOjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDgKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMScKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWgxMDB4MS1mcDgtdGhyb3VnaHB1dAogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
           latestVersionSizeInBytes: 9133361327
           modelFormat: trl-llm
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: H100
           - key: COUNT
@@ -56,16 +55,16 @@ models:
             value: False
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-l40sx1-fp16-lora
           framework: TensorRT-LLM
-          displayName: llama 3 8b instruct l40sx1 fp16 lora throughput
+          displayName: Llama 3 8B Instruct L40Sx1 FP16 LoRA Throughput
           ngcMetadata: Mzg4MTQwMjEzZWU5NjE1ZTY0M2JkYTA5ZDg1MDgyYTIxZjUxNjIyYzA3YmRlM2QwODExZDdjNjk5ODg3M2EwYjoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtbDQwc3gxLWZwMTYtbG9yYQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
           sha: 388140213ee9615e643bda09d85082a21f51622c07bde3d0811d7c6998873a0b
           modelFormat: trl-llm
           latestVersionSizeInBytes: 16090021132
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: L40S
           - key: COUNT
@@ -80,16 +79,16 @@ models:
             value: 32
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-h100x1-fp16-lora
           framework: TensorRT-LLM
-          displayName: llama 3 8b instruct h100x1 fp16 lora throughput
+          displayName: Llama 3 8B Instruct H100x1 FP16 LoRA Throughput
           latestVersionSizeInBytes: 16090169549
           ngcMetadata: M2JkZjY0NTZmZjIxYzE5ZDVjN2NjMzcwMTA3OTA0NDhhNGJlNjEzYTFmZDEyOTE2NjU1ZGZhYjVhMGRkOWI4ZToKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtaDEwMHgxLWZwMTYtbG9yYQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
           sha: 3bdf6456ff21c19d5c7cc37010790448a4be613a1fd12916655dfab5a0dd9b8e
           modelFormat: trl-llm
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: H100
           - key: COUNT
@@ -104,15 +103,15 @@ models:
             value: 32
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-a100x1-fp16-throughput
           sha: 751382df4272eafc83f541f364d61b35aed9cce8c7b0c869269cea5a366cd08c
-          displayName: llama 3 8b instruct a100x1 fp16 throughput
+          displayName: Llama 3 8B Instruct A100x1 FP16 Throughput
           ngcMetadata: NzUxMzgyZGY0MjcyZWFmYzgzZjU0MWYzNjRkNjFiMzVhZWQ5Y2NlOGM3YjBjODY5MjY5Y2VhNWEzNjZjZDA4YzoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBBMTAwCiAgICBncHVfZGV2aWNlOiAyMGIyOjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzEnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1hMTAweDEtZnAxNi10aHJvdWdocHV0CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
           modelFormat: tensorrt_llm
           latestVersionSizeInBytes: 16082749376
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A100
           - key: COUNT
@@ -125,15 +124,15 @@ models:
             value: False
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-a10gx2-fp16-lora
           sha: 9137f4d51dadb93c6b5864a19fd7c035bf0b718f3e15ae9474233ebd6468c359
-          displayName: llama 3 8b instruct a10gx2 fp16 lora throughput
+          displayName: Llama 3 8B Instruct A10Gx2 FP16 LoRA Throughput
           modelFormat: tensorrt_llm
           ngcMetadata: OTEzN2Y0ZDUxZGFkYjkzYzZiNTg2NGExOWZkN2MwMzViZjBiNzE4ZjNlMTVhZTk0NzQyMzNlYmQ2NDY4YzM1OToKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGdwdTogQTEwRwogICAgZ3B1X2RldmljZTogMjIzNzoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcyJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtYTEwZ3gyLWZwMTYtbG9yYQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIG5pbV9jb25maWcueWFtbAogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMS5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
           latestVersionSizeInBytes: 17128778050
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A10G
           - key: COUNT
@@ -148,15 +147,15 @@ models:
             value: 32
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-a10gx1-fp16-throughput
           sha: c334b76d50783655bdf62b8138511456f7b23083553d310268d0d05f254c012b
-          displayName: llama 3 8b instruct a10gx1 fp16 lora throughput
+          displayName: Llama 3 8B Instruct A10Gx1 FP16 LoRA Throughput
           modelFormat: tensorrt_llm
           ngcMetadata: YzMzNGI3NmQ1MDc4MzY1NWJkZjYyYjgxMzg1MTE0NTZmN2IyMzA4MzU1M2QzMTAyNjhkMGQwNWYyNTRjMDEyYjoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBBMTBHCiAgICBncHVfZGV2aWNlOiAyMjM3OjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzEnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1hMTBneDEtZnAxNi10aHJvdWdocHV0CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgbmltX2NvbmZpZy55YW1sCiAgICAgICAgLSAhbmFtZSBudmlkaWEtc21pLmxvZwogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
           latestVersionSizeInBytes: 16067805801
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A10G
           - key: COUNT
@@ -171,13 +170,13 @@ models:
           sha: cb52cbc73a6a71392094380f920a3548f27c5fcc9dab02a98dc1bcb3be9cf8d1
           modelFormat: tensorrt_llm
           ngcMetadata: Y2I1MmNiYzczYTZhNzEzOTIwOTQzODBmOTIwYTM1NDhmMjdjNWZjYzlkYWIwMmE5OGRjMWJjYjNiZTljZjhkMToKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBIMTAwCiAgICBncHVfZGV2aWNlOiAyMzMwOjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzEnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1oMTAweDEtZnAxNi10aHJvdWdocHV0CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
-          displayName: llama 3 8b instruct h100x1 fp16 throughput
+          displayName: Llama 3 8B Instruct H100x1 FP16 Throughput
           latestVersionSizeInBytes: 16083381620
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: H100
           - key: COUNT
@@ -191,14 +190,14 @@ models:
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-a100x1-fp16-lora
           sha: cce57ae50c3af15625c1668d5ac4ccbe82f40fa2e8379cc7b842cc6c976fd334
           ngcMetadata: Y2NlNTdhZTUwYzNhZjE1NjI1YzE2NjhkNWFjNGNjYmU4MmY0MGZhMmU4Mzc5Y2M3Yjg0MmNjNmM5NzZmZDMzNDoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGdwdTogQTEwMAogICAgZ3B1X2RldmljZTogMjBiMjoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtYTEwMHgxLWZwMTYtbG9yYQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
-          displayName: llama 3 8b instruct a100x1 fp16 lora throughput
+          displayName: Llama 3 8B Instruct A100x1 FP16 LoRA Throughput
           modelFormat: tensorrt_llm
           latestVersionSizeInBytes: 16089504881
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A100
           - key: COUNT
@@ -214,14 +213,14 @@ models:
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-l40sx1-fp16-throughput
           sha: d8dd8af82e0035d7ca50b994d85a3740dbd84ddb4ed330e30c509e041ba79f80
           ngcMetadata: ZDhkZDhhZjgyZTAwMzVkN2NhNTBiOTk0ZDg1YTM3NDBkYmQ4NGRkYjRlZDMzMGUzMGM1MDllMDQxYmE3OWY4MDoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBMNDBTCiAgICBncHVfZGV2aWNlOiAyNmI1OjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzEnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1sNDBzeDEtZnAxNi10aHJvdWdocHV0CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
-          displayName: llama 3 8b instruct l40sx1 fp16 throughput
+          displayName: Llama 3 8B Instruct L40Sx1 FP16 Throughput
           modelFormat: tensorrt_llm
           latestVersionSizeInBytes: 16067790606
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: L40S
           - key: COUNT
@@ -236,13 +235,13 @@ models:
           sha: 24199f79a562b187c52e644489177b6a4eae0c9fdad6f7d0a8cb3677f5b1bc89
           modelFormat: tensorrt_llm
           ngcMetadata: MjQxOTlmNzlhNTYyYjE4N2M1MmU2NDQ0ODkxNzdiNmE0ZWFlMGM5ZmRhZDZmN2QwYThjYjM2NzdmNWIxYmM4OToKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBMNDBTCiAgICBncHVfZGV2aWNlOiAyNmI1OjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzInCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1sNDBzeDItZnAxNi1sYXRlbmN5CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMS5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
-          displayName: llama 3 8b instruct l40sx2 fp16 latency
+          displayName: Llama 3 8B Instruct L40Sx2 FP16 Latency
           latestVersionSizeInBytes: 17126492709
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: L40S
           - key: COUNT
@@ -257,13 +256,13 @@ models:
           sha: 879b05541189ce8f6323656b25b7dff1930faca2abe552431848e62b7e767080
           modelFormat: tensorrt_llm
           ngcMetadata: ODc5YjA1NTQxMTg5Y2U4ZjYzMjM2NTZiMjViN2RmZjE5MzBmYWNhMmFiZTU1MjQzMTg0OGU2MmI3ZTc2NzA4MDoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBIMTAwCiAgICBncHVfZGV2aWNlOiAyMzMwOjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzInCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1oMTAweDItZnAxNi1sYXRlbmN5CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMS5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
-          displayName: llama 3 8b instruct h100x2 fp16 latency
+          displayName: Llama 3 8B Instruct H100x2 FP16 Latency
           latestVersionSizeInBytes: 17158947761
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: H100
           - key: COUNT
@@ -276,15 +275,15 @@ models:
             value: False
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-a100x2-fp16-latency
           sha: a93a1a6b72643f2b2ee5e80ef25904f4d3f942a87f8d32da9e617eeccfaae04c
-          displayName: llama 3 8b instruct a100x2 fp16 latency
+          displayName: Llama 3 8B Instruct A100x2 FP16 Latency
           ngcMetadata: YTkzYTFhNmI3MjY0M2YyYjJlZTVlODBlZjI1OTA0ZjRkM2Y5NDJhODdmOGQzMmRhOWU2MTdlZWNjZmFhZTA0YzoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBBMTAwCiAgICBncHVfZGV2aWNlOiAyMGIyOjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzInCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1hMTAweDItZnAxNi1sYXRlbmN5CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgcmFuazAuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMS5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
           modelFormat: tensorrt_llm
           latestVersionSizeInBytes: 17157785173
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A100
           - key: COUNT
@@ -299,13 +298,13 @@ models:
           sha: dcd85d5e877e954f26c4a7248cd3b98c489fbde5f1cf68b4af11d665fa55778e
           modelFormat: tensorrt_llm
           ngcMetadata: ZGNkODVkNWU4NzdlOTU0ZjI2YzRhNzI0OGNkM2I5OGM0ODlmYmRlNWYxY2Y2OGI0YWYxMWQ2NjVmYTU1Nzc4ZToKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBIMTAwCiAgICBncHVfZGV2aWNlOiAyMzMwOjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDgKICAgIHByb2ZpbGU6IGxhdGVuY3kKICAgIHRwOiAnMicKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWgxMDB4Mi1mcDgtbGF0ZW5jeQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazEuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
-          displayName: llama 3 8b instruct h100x2 fp8 latency
+          displayName: Llama 3 8B Instruct H100x2 FP8 Latency
           latestVersionSizeInBytes: 9226771924
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: H100
           - key: COUNT
@@ -320,13 +319,13 @@ models:
           sha: e0f4a47844733eb57f9f9c3566432acb8d20482a1d06ec1c0d71ece448e21086
           modelFormat: tensorrt_llm
           ngcMetadata: ZTBmNGE0Nzg0NDczM2ViNTdmOWY5YzM1NjY0MzJhY2I4ZDIwNDgyYTFkMDZlYzFjMGQ3MWVjZTQ0OGUyMTA4NjoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBBMTBHCiAgICBncHVfZGV2aWNlOiAyMjM3OjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDE2CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzInCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1hMTBneDItZnAxNi1sYXRlbmN5CiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjaGVja3N1bXMuYmxha2UzCiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgbWV0YWRhdGEuanNvbgogICAgICAgIC0gIW5hbWUgbmltX2NvbmZpZy55YW1sCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
-          displayName: llama 3 8b instruct a10gx2 fp16 latency
+          displayName: Llama 3 8B Instruct A10Gx2 FP16 Latency
           latestVersionSizeInBytes: 17126474363
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A10G
           - key: COUNT
@@ -339,15 +338,15 @@ models:
             value: False
         - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-l40sx2-fp8-latency
           sha: f59d52b0715ee1ecf01e6759dea23655b93ed26b12e57126d9ec43b397ea2b87
-          displayName: llama 3 8b instruct l40sx2 fp8 latency
+          displayName: Llama 3 8B Instruct L40Sx2 FP8 Latency
           modelFormat: tensorrt_llm
           ngcMetadata: ZjU5ZDUyYjA3MTVlZTFlY2YwMWU2NzU5ZGVhMjM2NTViOTNlZDI2YjEyZTU3MTI2ZDllYzQzYjM5N2VhMmI4NzoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBMNDBTCiAgICBncHVfZGV2aWNlOiAyNmI1OjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDgKICAgIHByb2ZpbGU6IGxhdGVuY3kKICAgIHRwOiAnMicKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWw0MHN4Mi1mcDgtbGF0ZW5jeQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazEuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
           latestVersionSizeInBytes: 9110735042
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: L40S
           - key: COUNT
@@ -358,22 +357,22 @@ models:
             value: '1.0.0'
           - key: feat_lora
             value: False     
-      - variantId: LLAMA 3 70B instruct
+      - variantId: Llama 3 70B Instruct
         displayName: 70B
         source:
           URL: https://catalog.ngc.nvidia.com/orgs/nim/teams/meta/models/llama3-70b-instruct
         optimizationProfiles:
         - profileId: nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-l40sx8-fp16-lora
           sha: 03fdb4d11f01be10c31b00e7c0540e2835e89a0079b483ad2dd3c25c8cc29b61
-          displayName: llama 3 70B  instruct l40sx8 fp16 lora throughput
+          displayName: Llama 3 70B Instruct L40Sx8 FP16 LoRA Throughput
           ngcMetadata: MDNmZGI0ZDExZjAxYmUxMGMzMWIwMGU3YzA1NDBlMjgzNWU4OWEwMDc5YjQ4M2FkMmRkM2MyNWM4Y2MyOWI2MToKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICd0cnVlJwogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBncHU6IEw0MFMKICAgIGdwdV9kZXZpY2U6IDI2YjU6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnOCcKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWw0MHN4OC1mcDE2LWxvcmEKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNoZWNrc3Vtcy5ibGFrZTMKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtZXRhZGF0YS5qc29uCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazIuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMy5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms0LmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazUuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rNi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms3LmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
           latestVersionSizeInBytes: 156766306689
           modelFormat: tensorrt_llm
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: L40S
           - key: GPU DEVICE
@@ -390,13 +389,13 @@ models:
           sha: 36fc1fa4fc35c1d54da115a39323080b08d7937dceb8ba47be44f4da0ec720ff
           modelFormat: tensorrt_llm
           ngcMetadata: MzZmYzFmYTRmYzM1YzFkNTRkYTExNWEzOTMyMzA4MGIwOGQ3OTM3ZGNlYjhiYTQ3YmU0NGY0ZGEwZWM3MjBmZjoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICd0cnVlJwogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnNCcKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWgxMDB4NC1mcDE2LWxvcmEKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNoZWNrc3Vtcy5ibGFrZTMKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtZXRhZGF0YS5qc29uCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazIuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMy5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
-          displayName: llama 3 70B  instruct h100x4 fp16 lora throughput
+          displayName: Llama 3 70B Instruct H100x4 FP16 LoRA Throughput
           latestVersionSizeInBytes: 147874506488
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: H100
           - key: GPU DEVICE
@@ -413,13 +412,13 @@ models:
           sha: 7ba9fbd93c41a28358215f3e94e79a2545ab44e39df016eb4c7d7cadc384bde7
           modelFormat: tensorrt_llm
           ngcMetadata: N2JhOWZiZDkzYzQxYTI4MzU4MjE1ZjNlOTRlNzlhMjU0NWFiNDRlMzlkZjAxNmViNGM3ZDdjYWRjMzg0YmRlNzoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICd0cnVlJwogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBncHU6IEExMDAKICAgIGdwdV9kZXZpY2U6IDIwYjI6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnNCcKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWExMDB4NC1mcDE2LWxvcmEKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNoZWNrc3Vtcy5ibGFrZTMKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtZXRhZGF0YS5qc29uCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazIuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMy5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
-          displayName: llama 3 70B  instruct a100x4 fp16 lora throughput
+          displayName: Llama 3 70B Instruct A100x4 FP16 LoRA Throughput
           latestVersionSizeInBytes: 147892966156
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A100
           - key: GPU DEVICE
@@ -436,13 +435,13 @@ models:
           sha: 8b8e03de8630626b904b37910e3d82a26cebb99634a921a0e5c59cb84125efe8
           modelFormat: tensorrt_llm
           ngcMetadata: OGI4ZTAzZGU4NjMwNjI2YjkwNGIzNzkxMGUzZDgyYTI2Y2ViYjk5NjM0YTkyMWEwZTVjNTljYjg0MTI1ZWZlODoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzQnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1sNDBzeDQtZnA4LXRocm91Z2hwdXQKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNoZWNrc3Vtcy5ibGFrZTMKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtZXRhZGF0YS5qc29uCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazIuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMy5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
-          displayName: llama 3 70B  instruct l40sx4 fp8 throughput
+          displayName: Llama 3 70B Instruct L40Sx4 FP8 Throughput
           latestVersionSizeInBytes: 72821531210
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: L40S
           - key: GPU DEVICE
@@ -457,13 +456,13 @@ models:
           sha: 8bb3b94e326789381bbf287e54057005a9250e3abbad0b1702a70222529fcd17
           modelFormat: tensorrt_llm
           ngcMetadata: OGJiM2I5NGUzMjY3ODkzODFiYmYyODdlNTQwNTcwMDVhOTI1MGUzYWJiYWQwYjE3MDJhNzAyMjI1MjlmY2QxNzoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzQnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1oMTAweDQtZnA4LXRocm91Z2hwdXQKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNoZWNrc3Vtcy5ibGFrZTMKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtZXRhZGF0YS5qc29uCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazIuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMy5lbmdpbmUKICAgICAgICAtICFuYW1lIHRydF9sbG1fY29uZmlnLnlhbWw=
-          displayName: llama 3 70B  instruct h100x4 fp8 throughput
+          displayName: Llama 3 70B Instruct H100x4 FP8 Throughput
           latestVersionSizeInBytes: 73487126182
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: H100
           - key: GPU DEVICE
@@ -477,14 +476,14 @@ models:
         - profileId: nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-l40sx8-fp16-throughput
           sha: 96b70da1414c7beb5cf671b3e7cf835078740764064c453cd86e84cf0491aac0
           ngcMetadata: OTZiNzBkYTE0MTRjN2JlYjVjZjY3MWIzZTdjZjgzNTA3ODc0MDc2NDA2NGM0NTNjZDg2ZTg0Y2YwNDkxYWFjMDoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICc4JwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtbDQwc3g4LWZwMTYtdGhyb3VnaHB1dAogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazEuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmszLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazQuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rNS5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms2LmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazcuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
-          displayName: llama 3 70B  instruct l40sx8 fp16 throughput
+          displayName: Llama 3 70B Instruct L40Sx8 FP16 Throughput
           modelFormat: tensorrt_llm
           latestVersionSizeInBytes: 155996073408
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: L40S
           - key: GPU DEVICE
@@ -498,14 +497,14 @@ models:
         - profileId: nim/meta/llama3-70b-instruct:0.10.0+cbc614f5-h100x4-fp16-throughput
           sha: abcff5042bfc3fa9f4d1e715b2e016c11c6735855edfe2093e9c24e83733788e
           ngcMetadata: YWJjZmY1MDQyYmZjM2ZhOWY0ZDFlNzE1YjJlMDE2YzExYzY3MzU4NTVlZGZlMjA5M2U5YzI0ZTgzNzMzNzg4ZToKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICc0JwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtaDEwMHg0LWZwMTYtdGhyb3VnaHB1dAogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazEuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmszLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
-          displayName: llama 3 70B  instruct h100x4 fp16 throughput
+          displayName: Llama 3 70B Instruct H100x4 FP16 Throughput
           latestVersionSizeInBytes: 147805459531
           modelFormat: tensorrt_llm
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: H100
           - key: GPU DEVICE
@@ -520,13 +519,13 @@ models:
           sha: b811296367317f5097ed9f71b8f08d2688b2411c852978ae49e8a0d5c3a30739
           modelFormat: tensorrt_llm
           ngcMetadata: YjgxMTI5NjM2NzMxN2Y1MDk3ZWQ5ZjcxYjhmMDhkMjY4OGIyNDExYzg1Mjk3OGFlNDllOGEwZDVjM2EzMDczOToKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogQTEwMAogICAgZ3B1X2RldmljZTogMjBiMjoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICc0JwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtYTEwMHg0LWZwMTYtdGhyb3VnaHB1dAogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazEuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmszLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
-          displayName: llama 3 70B instruct a100x4 fp16 throughput
+          displayName: Llama 3 70B Instruct A100x4 FP16 Throughput
           latestVersionSizeInBytes: 147823613071
           spec:
           - key: profile
-            value: throughput
+            value: Throughput
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A100
           - key: GPU DEVICE
@@ -541,13 +540,13 @@ models:
           sha: 2e9b29c44b3d82821e7f4facd1a652ec5e0c4e7e473ee33451f6d046f616c3e5
           modelFormat: tensorrt_llm
           ngcMetadata: MmU5YjI5YzQ0YjNkODI4MjFlN2Y0ZmFjZDFhNjUyZWM1ZTBjNGU3ZTQ3M2VlMzM0NTFmNmQwNDZmNjE2YzNlNToKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzgnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1sNDBzeDgtZnA4LWxhdGVuY3kKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNoZWNrc3Vtcy5ibGFrZTMKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtZXRhZGF0YS5qc29uCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazIuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMy5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms0LmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazUuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rNi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms3LmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
-          displayName: llama 3 70B instruct l40sx8 fp8 latency
+          displayName: Llama 3 70B Instruct L40Sx8 FP8 Latency
           latestVersionSizeInBytes: 72985409512
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: L40S
           - key: GPU DEVICE
@@ -562,13 +561,13 @@ models:
           sha: 7f8bb4a2b97cf07faf6fb930ba67f33671492b7653f2a06fe522c7de65b544ca
           modelFormat: tensorrt_llm
           ngcMetadata: N2Y4YmI0YTJiOTdjZjA3ZmFmNmZiOTMwYmE2N2YzMzY3MTQ5MmI3NjUzZjJhMDZmZTUyMmM3ZGU2NWI1NDRjYToKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogQTEwMAogICAgZ3B1X2RldmljZTogMjBiMjoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogYmYxNgogICAgcHJvZmlsZTogbGF0ZW5jeQogICAgdHA6ICc4JwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtYTEwMHg4LWJmMTYtbGF0ZW5jeQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazEuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmszLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazQuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rNS5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms2LmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazcuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
-          displayName: llama 3 70B instruct a100x8 bf16 latency
+          displayName: Llama 3 70B Instruct A100x8 bf16 Latency
           latestVersionSizeInBytes: 156706655694
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: A100
           - key: GPU DEVICE
@@ -583,13 +582,13 @@ models:
           sha: 93782c337ddaf3f6b442ef7baebd0a732e433b7b93ec06bfd3db27945de560b6
           modelFormat: tensorrt_llm
           ngcMetadata: OTM3ODJjMzM3ZGRhZjNmNmI0NDJlZjdiYWViZDBhNzMyZTQzM2I3YjkzZWMwNmJmZDNkYjI3OTQ1ZGU1NjBiNjoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzgnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0OjAuMTAuMCtjYmM2MTRmNS1oMTAweDgtZnA4LWxhdGVuY3kKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNoZWNrc3Vtcy5ibGFrZTMKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtZXRhZGF0YS5qc29uCiAgICAgICAgLSAhbmFtZSByYW5rMC5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmsxLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazIuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMy5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms0LmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazUuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rNi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms3LmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
-          displayName: llama 3 70B instruct h100x8 fp8 latency
+          displayName: Llama 3 70B Instruct H100x8 FP8 Latency
           latestVersionSizeInBytes: 74543678580
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp8
+            value: FP8
           - key: GPU
             value: H100
           - key: GPU DEVICE
@@ -604,13 +603,13 @@ models:
           sha: a90b2c0217492b1020bead4e7453199c9f965ea53e9506c007f4ff7b58ee01ff
           modelFormat: tensorrt_llm
           ngcMetadata: YTkwYjJjMDIxNzQ5MmIxMDIwYmVhZDRlNzQ1MzE5OWM5Zjk2NWVhNTNlOTUwNmMwMDdmNGZmN2I1OGVlMDFmZjoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogbGF0ZW5jeQogICAgdHA6ICc4JwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtaDEwMHg4LWZwMTYtbGF0ZW5jeQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazEuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rMi5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbmszLmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazQuZW5naW5lCiAgICAgICAgLSAhbmFtZSByYW5rNS5lbmdpbmUKICAgICAgICAtICFuYW1lIHJhbms2LmVuZ2luZQogICAgICAgIC0gIW5hbWUgcmFuazcuZW5naW5lCiAgICAgICAgLSAhbmFtZSB0cnRfbGxtX2NvbmZpZy55YW1s
-          displayName: llama 3 70B instruct h100x8 fp16 latency
+          displayName: Llama 3 70B Instruct H100x8 FP16 Latency
           latestVersionSizeInBytes: 156607721540
           spec:
           - key: profile
-            value: latency
+            value: Latency
           - key: precision
-            value: fp16
+            value: FP16
           - key: GPU
             value: H100
           - key: GPU DEVICE
@@ -623,8 +622,8 @@ models:
             value: 8
     labels:
       - Llama
-      - meta
-      - chat
+      - Meta
+      - Chat
       - "Large Language Model"
       - "TensorRT-LLM"
       - "Language Generation"
@@ -634,4 +633,613 @@ models:
       architectures:
         - Other
       modelType: llama
+    license: NVIDIA AI Foundation Models Community License
+  - name: Mistral Instruct 
+    displayName: Mistral Instruct
+    type: NGC
+    description: Mistral Instruct is a language model that can follow instructions, complete requests, and generate creative text formats. The Mistral Instract Large Language Model (LLM) is an instruct fine-tuned version of the Mistral.
+    modelVariants:
+      - variantId: Mistral 7B Instruct
+        displayName: Mistral 7B Instruct
+        source:
+          URL: https://catalog.ngc.nvidia.com/orgs/nim/teams/mistralai/containers/mistral-7b-instruct-v03
+        optimizationProfiles:
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-h100x1-fp8-throughput.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct H100x1 FP8 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: MDhhYjQzNjNmMjI1YzE5ZTM3ODViNTg0MDhmYTRkY2FjNDcyNDU5Y2NhMWZlYmNmYWZmYjQzZjg3MzU1N2U4NzoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzEnCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncGFyYW1zLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwudjMnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6aGYKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRScKICAgICAgICAgICAgLSAhbmFtZSAnTk9USUNFJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXN0cmFsLTdiLWluc3RydWN0LXYwMzowLjEwLjErNzlhNzYxNzYtaDEwMHgxLWZwOC10aHJvdWdocHV0LjEuMC4wLjE2MDUzODA5LWI=
+          sha: 08ab4363f225c19e3785b58408fa4dcac472459cca1febcfaffb43f873557e87
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 7581039585
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-a100x1-fp16-throughput-lora.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct A100 FP16 LoRA Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: MmM1N2YwMTM1ZjljNmRlMGM1NTZiYTM3ZjQzZjU1ZjZhNmMwYTI1ZmUwNTA2ZGY3M2UxODlhZWRmYmQ4YjMzMzoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogdHJ1ZQogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBncHU6IEExMDAKICAgIGdwdV9kZXZpY2U6IDIwYjI6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMScKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdSRUFETUUubWQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdnZW5lcmF0aW9uX2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uJwogICAgICAgICAgICAtICFuYW1lICdwYXJhbXMuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbC52MycKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyX2NvbmZpZy5qc29uJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXN0cmFsLTdiLWluc3RydWN0LXYwMzpoZgogICAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdMSUNFTlNFJwogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOjAuMTAuMSs3OWE3NjE3Ni1hMTAweDEtZnAxNi10aHJvdWdocHV0LWxvcmEuMS4wLjAuMTYwNTM4MDktYg==
+          sha: 2c57f0135f9c6de0c556ba37f43f55f6a6c0a25fe0506df73e189aedfbd8b333
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14543314055
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: A100
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-h100x2-fp8-latency.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct H100 FP8 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: NDgwMDRiYWY0ZjQ1Y2ExNzdhYTk0YWJmZDNjNWM1NDg1ODgwOGFkNzI4OTE0YjE2MjZjM2NmMDM4ZWE4NWJjNDoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzInCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncGFyYW1zLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwudjMnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6aGYKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRScKICAgICAgICAgICAgLSAhbmFtZSAnTk9USUNFJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOjAuMTAuMSs3OWE3NjE3Ni1oMTAweDItZnA4LWxhdGVuY3kuMS4wLjAuMTYwNTM4MDktYg==
+          sha: 48004baf4f45ca177aa94abfd3c5c54858808ad728914b1626c3cf038ea85bc4
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 7683289422
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-l40sx2-fp8-latency.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct l40 FP8 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: NDgwMDRiYWY0ZjQ1Y2ExNzdhYTk0YWJmZDNjNWM1NDg1ODgwOGFkNzI4OTE0YjE2MjZjM2NmMDM4ZWE4NWJjNDoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiBsYXRlbmN5CiAgICB0cDogJzInCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncGFyYW1zLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwudjMnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6aGYKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRScKICAgICAgICAgICAgLSAhbmFtZSAnTk9USUNFJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOjAuMTAuMSs3OWE3NjE3Ni1oMTAweDItZnA4LWxhdGVuY3kuMS4wLjAuMTYwNTM4MDktYg==
+          sha: 5c17c27186b232e834aee9c61d1f5db388874da40053d70b84fd1386421ff577
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 7668082873
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-h100x2-fp16-latency.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct H100 FP16 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: NjA2NGFiNGMzM2ExYzZkYTgwNTg0MjJiOGNiMDM0N2U3MjE0MWQyMDNjNzdiYTMwOWNlNWM1NTMzZjU0ODE4ODoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogbGF0ZW5jeQogICAgdHA6ICcyJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhmCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazEuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXN0cmFsLTdiLWluc3RydWN0LXYwMzowLjEwLjErNzlhNzYxNzYtaDEwMHgyLWZwMTYtbGF0ZW5jeS4xLjAuMC4xNjA1MzgwOS1i
+          sha: 6064ab4c33a1c6da8058422b8cb0347e72141d203c77ba309ce5c5533f548188
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14843530523
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-h100x1-fp16-throughput.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct H100 FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: ODgzM2I5ZWJhMWJkNGZiZWQ0Zjc2NGU2NDc5NzIyN2FkY2EzMmUzYzFmNjMwYzI3MjJhOGE1MmZlZTJmZDFmYToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhmCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MC4xMC4xKzc5YTc2MTc2LWgxMDB4MS1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYwNTM4MDktYg==
+          sha: 8833b9eba1bd4fbed4f764e64797227adca32e3c1f630c2722a8a52fee2fd1fa
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14534647998
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-h100x1-fp16-throughput-lora.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct H100 FP16 LoRA Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: ODgzM2I5ZWJhMWJkNGZiZWQ0Zjc2NGU2NDc5NzIyN2FkY2EzMmUzYzFmNjMwYzI3MjJhOGE1MmZlZTJmZDFmYToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhmCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MC4xMC4xKzc5YTc2MTc2LWgxMDB4MS1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYwNTM4MDktYg==
+          sha: 8f9730e45a88fb2ac16ce2ce21d7460479da1fd8747ba32d2b92fc4f6140ba83
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14544190179
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-l40sx1-fp16-throughput.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct L40S FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: OTVmNzY0YjEzZGNhOTgxNzMwNjhhZDdkZDkxODQwOThlMThhMDRhZDgwMzcyMjU0MGE5MTFkMzVhNTk5Mzc4YToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhmCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MC4xMC4xKzc5YTc2MTc2LWw0MHN4MS1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYwNTM4MDktYg==
+          sha: 95f764b13dca98173068ad7dd9184098e18a04ad803722540a911d35a599378a
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14534535777
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 26b5:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-a100x1-fp16-throughput.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct A100 FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: Yzc5NTYxYTc0Zjk3YjE1N2RlMTIwNjZiN2ExMzc3MDJhNGIwOWY3MWY0MjczZmY3NDdlZmUwNjA4ODFmY2E5MjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogQTEwMAogICAgZ3B1X2RldmljZTogMjBiMjoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhmCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MC4xMC4xKzc5YTc2MTc2LWExMDB4MS1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYwNTM4MDktYg==
+          sha: c79561a74f97b157de12066b7a137702a4b09f71f4273ff747efe060881fca92
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14533870834
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: A100
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-l40sx1-fp8-throughput.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct L40S FP8 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: Y2MxODk0MmY0MGU3NzBhYTI3YTBiMDJjMWY1YmYxNDU4YTZmZWRkMTBhMWVkMzc3NjMwZDMwZDcxYTFiMzZkYjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnA4CiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzEnCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncGFyYW1zLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwudjMnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6aGYKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRScKICAgICAgICAgICAgLSAhbmFtZSAnTk9USUNFJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXN0cmFsLTdiLWluc3RydWN0LXYwMzowLjEwLjErNzlhNzYxNzYtbDQwc3gxLWZwOC10aHJvdWdocHV0LjEuMC4wLjE2MDUzODA5LWI=
+          sha: cc18942f40e770aa27a0b02c1f5bf1458a6fedd10a1ed377630d30d71a1b36db
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 7582789228
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 26b5:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-a100x2-fp16-latency.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct A100 FP16 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: ZGVhOWFmOTBkNTMxMWZmMmQ2NTFkYjhjMTZmNzUyZDAxNDA1M2QzYjFjNTUwNDc0Y2JlZGEyNDFmODFjOTZiZDoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogQTEwMAogICAgZ3B1X2RldmljZTogMjBiMjoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogbGF0ZW5jeQogICAgdHA6ICcyJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhmCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazEuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXN0cmFsLTdiLWluc3RydWN0LXYwMzowLjEwLjErNzlhNzYxNzYtYTEwMHgyLWZwMTYtbGF0ZW5jeS4xLjAuMC4xNjA1MzgwOS1i
+          sha: dea9af90d5311ff2d651db8c16f752d014053d3b1c550474cbeda241f81c96bd
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14841967999
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: A100
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-l40sx1-fp16-throughput-lora.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct L40S FP16 LoRA Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: ZWI0NDVkMWU0NTFlZDM5ODdjYTM2ZGE5YmU2YmI0Y2RkNDFlNDk4MzQ0Y2JmNDc3YTE2MDAxOTg3NTM4ODNmZjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogdHJ1ZQogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBncHU6IEw0MFMKICAgIGdwdV9kZXZpY2U6IDI2YjU6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMScKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdSRUFETUUubWQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdnZW5lcmF0aW9uX2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uJwogICAgICAgICAgICAtICFuYW1lICdwYXJhbXMuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbC52MycKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyX2NvbmZpZy5qc29uJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXN0cmFsLTdiLWluc3RydWN0LXYwMzpoZgogICAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdMSUNFTlNFJwogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOjAuMTAuMSs3OWE3NjE3Ni1sNDBzeDEtZnAxNi10aHJvdWdocHV0LWxvcmEuMS4wLjAuMTYwNTM4MDktYg==
+          sha: eb445d1e451ed3987ca36da9be6bb4cdd41e498344cbf477a1600198753883ff
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14543905478
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 26b5:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:0.10.1+79a76176-l40sx2-fp16-latency.1.0.0.16053809-b
+          displayName: Mistral 7B Instruct L40S FP16 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: ZWYyMmM3Y2VjYmNmMmM4YjM4ODliZDU4YTQ4MDk1ZTQ3YThjYzAzOTRkMjIxYWNkYTFiNDA4N2I0NmM2ZjNlOToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogbGF0ZW5jeQogICAgdHA6ICcyJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhmCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazEuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXN0cmFsLTdiLWluc3RydWN0LXYwMzowLjEwLjErNzlhNzYxNzYtbDQwc3gyLWZwMTYtbGF0ZW5jeS4xLjAuMC4xNjA1MzgwOS1i
+          sha: ef22c7cecbcf2c8b3889bd58a48095e47a8cc0394d221acda1b4087b46c6f3e9
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14843372758
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 26b5:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+    labels:
+      - "Mistral"
+      - "Instruct"
+      - "Large Language Model"
+      - "TensorRT-LLM"
+      - "Language Generation"
+      - "NeMo"
+      - "NVIDIA Validated"
+    config:
+      architectures:
+        - Other
+      modelType: Mistral
+    license: NVIDIA AI Foundation Models Community License
+  - name: Mixtral instruct 
+    displayName: Mixtral
+    type: NGC
+    description: Mixtral Instruct is a language model that can follow instructions, complete requests, and generate creative text formats. The Mixtral Instruct Large Language Model (LLM) is an instruct fine-tuned version of the Mixtral.
+    modelVariants:
+      - variantId: Mixtral 8x7B Instruct
+        displayName: Mixtral 8x7B Instruct
+        source:
+          URL: https://catalog.ngc.nvidia.com/orgs/nim/teams/mistralai/containers/mixtral-8x7b-instruct-v01
+        optimizationProfiles:
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-h100x2-fp8-throughput.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct H100 FP8 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: MDAwNTZiODFjMmU0MWViOWI4NDczNDJlZDU1M2FlODg2MTRmNDUwZjNmMTVlZWJmZDJhZTU2MTc0NDg0YmFjZDoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwOAogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcyJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMTpoZi1hNjA4MzJjLWIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsxLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMTowLjEwLjErNzlhNzYxNzYtaDEwMHgyLWZwOC10aHJvdWdocHV0LjEuMC4wLjE2MTQwNDE3
+          sha: 00056b81c2e41eb9b847342ed553ae88614f450f3f15eebfd2ae56174484bacd
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 47143615504
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-h100x2-int8wo-throughput.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct H100 int8wo Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: MDFmMWFkMDE5ZjU1YWJiNzZmMTBmMTY4N2Y3NmVhOGU1ZDJmM2Q1MWQ2ODMxZGRjNTgyZDk3OWZmMjEwYjRjYjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGludDh3bwogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcyJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMTpoZi1hNjA4MzJjLWIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsxLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMTowLjEwLjErNzlhNzYxNzYtaDEwMHgyLWludDh3by10aHJvdWdocHV0LjEuMC4wLjE2MTQwNDE3
+          sha: 01f1ad019f55abb76f10f1687f76ea8e5d2f3d51d6831ddc582d979ff210b4cb
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 47352822039
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: int8wo
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-h100x2-fp16-throughput.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct H100 FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: MWY4NTlhZjJiZTZjNTc1MjhkYzZkMzJiNjA2MmM5ODUyNjA1ZDhmMmQ2OGJiZTc2YTQzYjY1ZWJjNWFjNzM4ZDoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMicKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6aGYtYTYwODMyYy1iCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6MC4xMC4xKzc5YTc2MTc2LWgxMDB4Mi1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYxNDA0MTc=
+          sha: 1f859af2be6c57528dc6d32b6062c9852605d8f2d68bbe76a43b65ebc5ac738d
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 93808041027
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-a100x2-fp16-throughput.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct A100 FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: OTg2NTM3NDg5OWI2YWMzYTFlMjVlNDc2NDRmM2Q2Njc1MzI4OGU5ZDk0OWQ4ODNiMTRjM2Y1NWI5OGZiMmViYzoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEExMDAKICAgIGdwdV9kZXZpY2U6IDIwYjI6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMicKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6aGYtYTYwODMyYy1iCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6MC4xMC4xKzc5YTc2MTc2LWExMDB4Mi1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYxNDA0MTc=
+          sha: 9865374899b6ac3a1e25e47644f3d66753288e9d949d883b14c3f55b98fb2ebc
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 93804315823
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-h100x4-fp16-latency.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct H100 FP16 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: ICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IGxhdGVuY3kKICAgIHRwOiAnNCcKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6aGYtYTYwODMyYy1iCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsyLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazMuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXh0cmFsLTh4N2ItaW5zdHJ1Y3QtdjAxOjAuMTAuMSs3OWE3NjE3Ni1oMTAweDQtZnAxNi1sYXRlbmN5LjEuMC4wLjE2MTQwNDE3
+          sha: 9972482479f39ecacc3f470aaa7d0de7b982a1b18f907aafdb8517db5643e05a
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 94475885022
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 4
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-l40sx4-fp16-throughput.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct L40S FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: ICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IGxhdGVuY3kKICAgIHRwOiAnNCcKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6aGYtYTYwODMyYy1iCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsyLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazMuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXh0cmFsLTh4N2ItaW5zdHJ1Y3QtdjAxOjAuMTAuMSs3OWE3NjE3Ni1oMTAweDQtZnAxNi1sYXRlbmN5LjEuMC4wLjE2MTQwNDE3
+          sha: ad3c46c1c8d71bb481205732787f2c157a9cfc9b6babef5860518a047e155639
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 94453103580
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 4
+          - key: GPU DEVICE
+            value: 26b5:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-h100x4-fp8-latency.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct H100 FP8 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: ZDM3NTgwZmE1ZGVhYmM1YTRjYjE3YTIzMzdlOGNjNjcyYjE5ZWFmMjc5MWNmMzE5ZmQxNjU4MjA2NWU0MDgxNjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwOAogICAgcHJvZmlsZTogbGF0ZW5jeQogICAgdHA6ICc0JwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMTpoZi1hNjA4MzJjLWIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsxLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazIuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMy5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6MC4xMC4xKzc5YTc2MTc2LWgxMDB4NC1mcDgtbGF0ZW5jeS4xLjAuMC4xNjE0MDQxNw==
+          sha: d37580fa5deabc5a4cb17a2337e8cc672b19eaf2791cf319fd16582065e40816
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 47320446534
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 4
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-a100x4-fp16-latency.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct A100 FP16 Latency
+          framework: TensorRT-LLM
+          ngcMetadata: ZTI0OWU3MGUzZWUzOTBlNjA2NzgyZWFiMTllN2E5Y2YyYWViODY1YmRiYzYzOGFhZjBmYzU4MDkwMTQ5Mjg0MToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEExMDAKICAgIGdwdV9kZXZpY2U6IDIwYjI6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHByb2ZpbGU6IGxhdGVuY3kKICAgIHRwOiAnNCcKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6aGYtYTYwODMyYy1iCiAgICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ0xJQ0VOU0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UudHh0JwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbWV0YWRhdGEuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncmFuazAuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsyLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazMuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXh0cmFsLTh4N2ItaW5zdHJ1Y3QtdjAxOjAuMTAuMSs3OWE3NjE3Ni1hMTAweDQtZnAxNi1sYXRlbmN5LjEuMC4wLjE2MTQwNDE3
+          sha: e249e70e3ee390e606782eab19e7a9cf2aeb865bdbc638aaf0fc580901492841
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 9094013963
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 4
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:0.10.1+79a76176-h100x4-int8wo-latency.1.0.0.16140417
+          displayName: Mixtral 8x7B Instruct H100 int8wo Latency
+          framework: TensorRT-LLM
+          ngcMetadata: ZWU2MTZhNTRiZWE4ZTg2OTAwOTc0OGVlZmIwZDkwNWIxNjhkMjA5NWQwY2RmNjZkNDBmM2E1NjEyMTk0ZDE3MDoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6IGZhbHNlCiAgICBncHU6IEgxMDAKICAgIGdwdV9kZXZpY2U6IDIzMzA6MTBkZQogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgICBwcDogJzEnCiAgICBwcmVjaXNpb246IGludDh3bwogICAgcHJvZmlsZTogbGF0ZW5jeQogICAgdHA6ICc0JwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMTpoZi1hNjA4MzJjLWIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsxLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazIuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMy5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3RydF9sbG1fY29uZmlnLnlhbWwnCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6MC4xMC4xKzc5YTc2MTc2LWgxMDB4NC1pbnQ4d28tbGF0ZW5jeS4xLjAuMC4xNjE0MDQxNw==
+          sha: ee616a54bea8e869009748eefb0d905b168d2095d0cdf66d40f3a5612194d170
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 47992100010
+          spec:
+          - key: profile
+            value: Latency
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 4
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+      - variantId: Mixtral 8x22b Instruct
+        displayName: Mixtral 8x22b Instruct
+        source:
+          URL: https://catalog.ngc.nvidia.com/orgs/nim/teams/mistralai/models/mixtral-8x22b-instruct-v01
+        optimizationProfiles:
+        - profileId: nim/mistralai/mixtral-8x22b-instruct-v01:0.10.1+79a76176-a100x8-fp16-throughput.1.0.0.16140417
+          displayName: Mixtral 8X22b Instruct A100 FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: MjhhODIwZmM3NTJmMDk2NDI4MGYwZTRlYmE3ZTA0OTBiOTViNzkwYjVlM2M0ZmZmMjE4ZWY5ZDJiMTJiOWY3NjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21peHRyYWwtOHgyMmItaW5zdHJ1Y3QtdjAuMQogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogQTEwMAogICAgZ3B1X2RldmljZTogMjBiMjoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICc4JwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHgyMmItaW5zdHJ1Y3QtdjAxOmhmLTUyNTcyYjIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsxLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazIuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMy5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Jhbms0LmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazUuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rNi5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Jhbms3LmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6MC4xMC4xKzc5YTc2MTc2LWExMDB4OC1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYxNDA0MTc=
+          sha: 28a820fc752f0964280f0e4eba7e0490b95b790b5e3c4fff218ef9d2b12b9f76
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 285288930778
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: A100
+          - key: COUNT
+            value: 8
+          - key: GPU DEVICE
+            value: 20b2:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x22b-instruct-v01:0.10.1+79a76176-h100x8-int8wo-throughput.1.0.0.16140417
+          displayName: Mixtral 8X22b Instruct H100 int8wo Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: NGFkOWEyMDhjZTBmOGVjNDFjZDZiODY4MWNkMGRkZjZmYmViNDA2ZWZiM2Q5YmFmNjg0N2EzZmI4YmFjNTg2MzoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21peHRyYWwtOHgyMmItaW5zdHJ1Y3QtdjAuMQogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogaW50OHdvCiAgICBwcm9maWxlOiB0aHJvdWdocHV0CiAgICB0cDogJzgnCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6aGYtNTI1NzJiMgogICAgICAtIGRzdDogdHJ0bGxtX2VuZ2luZQogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdMSUNFTlNFLnR4dCcKICAgICAgICAgICAgLSAhbmFtZSAnTk9USUNFLnR4dCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21ldGFkYXRhLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmswLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazEuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMi5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmszLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazQuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rNS5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Jhbms2LmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazcuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICd0cnRfbGxtX2NvbmZpZy55YW1sJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXh0cmFsLTh4MjJiLWluc3RydWN0LXYwMTowLjEwLjErNzlhNzYxNzYtaDEwMHg4LWludDh3by10aHJvdWdocHV0LjEuMC4wLjE2MTQwNDE3
+          sha: 4ad9a208ce0f8ec41cd6b8681cd0ddf6fbeb406efb3d9baf6847a3fb8bac5863
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 144762798586
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: int8wo
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 8
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x22b-instruct-v01:0.10.1+79a76176-h100x8-fp16-throughput.1.0.0.16140417
+          displayName: Mixtral 8X22b Instruct H100 FP16 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: ZTQ0Yzc1NWVmNjYyOGNjY2I3NGNjZjU4YWY0YTZlZmEwMzlmN2U0OWUwN2E5ZGQ3YTI3ZWIxN2Y2NTAwOTY0ZToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21peHRyYWwtOHgyMmItaW5zdHJ1Y3QtdjAuMQogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogZmFsc2UKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICc4JwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHgyMmItaW5zdHJ1Y3QtdjAxOmhmLTUyNTcyYjIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnTElDRU5TRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRS50eHQnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NoZWNrc3Vtcy5ibGFrZTMnCiAgICAgICAgICAgIC0gIW5hbWUgJ2NvbmZpZy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdtZXRhZGF0YS5qc29uJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMC5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3JhbmsxLmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazIuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rMy5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Jhbms0LmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAncmFuazUuZW5naW5lJwogICAgICAgICAgICAtICFuYW1lICdyYW5rNi5lbmdpbmUnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Jhbms3LmVuZ2luZScKICAgICAgICAgICAgLSAhbmFtZSAndHJ0X2xsbV9jb25maWcueWFtbCcKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6MC4xMC4xKzc5YTc2MTc2LWgxMDB4OC1mcDE2LXRocm91Z2hwdXQuMS4wLjAuMTYxNDA0MTc=
+          sha: e44c755ef6628cccb74ccf58af4a6efa039f7e49e07a9dd7a27eb17f6500964e
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 285170977174
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 8
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+    labels:
+      - "Mistral"
+      - "Instruct"
+      - "Large Language Model"
+      - "TensorRT-LLM"
+      - "Language Generation"
+      - "NeMo"
+      - "NVIDIA Validated"
+    config:
+      architectures:
+        - Other
+      modelType: mistral
     license: NVIDIA AI Foundation Models Community License
