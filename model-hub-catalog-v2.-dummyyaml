@@ -1,0 +1,103 @@
+# The model spec is designed keeping in mind both the HF and NGC APIs and tried to capture minimal information from both the APIs.
+models:
+  - name: llama3 Instruct
+    displayName: Llama 3 Instruct
+    type: NGC
+    description: Llama 3 is a large language AI model comprising a collection of models capable of generating text and code in response to prompts. Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. Token counts refer to pretraining data only. Both the 8 and 70B versions use Grouped-Query Attention (GQA) for improved inference scalability. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.
+    modelVariants:
+      - variantId: Llama 3 8B Instruct
+        source:
+          URL: https://catalog.ngc.nvidia.com/orgs/nim/teams/meta/models/llama3-8b-instruct
+        optimizationProfiles:
+        - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-l40sx1-fp8-throughput
+          displayName: Llama 3 8B Instruct L40Sx1 FP8 Throughput
+          framework: TensorRT-LLM
+          ngcMetadata: MDllMmY4ZTY4Zjc4Y2U5NGJmNzlkMTViNDBhMjEzMzNjZWE1ZDA5ZGJlMDFlZGU2M2Y2Yzk1N2Y0ZmNmYWI3YjoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBMNDBTCiAgICBncHVfZGV2aWNlOiAyNmI1OjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDgKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMScKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWw0MHN4MS1mcDgtdGhyb3VnaHB1dAogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
+          sha: 09e2f8e68f78ce94bf79d15b40a21333cea5d09dbe01ede63f6c957f4fcfab7b
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 9094013963
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 26b5:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-h100x1-fp8-throughput
+          framework: TensorRT-LLM
+          displayName: Llama 3 8B Instruct H100x1 FP8 Throughput
+          sha: 30b562864b5b1e3b236f7b6d6a0998efbed491e4917323d04590f715aa9897dc
+          ngcMetadata: MzBiNTYyODY0YjViMWUzYjIzNmY3YjZkNmEwOTk4ZWZiZWQ0OTFlNDkxNzMyM2QwNDU5MGY3MTVhYTk4OTdkYzoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgZ3B1OiBIMTAwCiAgICBncHVfZGV2aWNlOiAyMzMwOjEwZGUKICAgIGxsbV9lbmdpbmU6IHRlbnNvcnJ0X2xsbQogICAgcHA6ICcxJwogICAgcHJlY2lzaW9uOiBmcDgKICAgIHByb2ZpbGU6IHRocm91Z2hwdXQKICAgIHRwOiAnMScKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OmhmCiAgICAgICAgZmlsZXM6CiAgICAgICAgLSAhbmFtZSBjb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgZ2VuZXJhdGlvbl9jb25maWcuanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgIC0gZHN0OiB0cnRsbG1fZW5naW5lCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MC4xMC4wK2NiYzYxNGY1LWgxMDB4MS1mcDgtdGhyb3VnaHB1dAogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
+          latestVersionSizeInBytes: 9133361327
+          modelFormat: trl-llm
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP8
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-l40sx1-fp16-lora
+          framework: TensorRT-LLM
+          displayName: Llama 3 8B Instruct L40Sx1 FP16 LoRA Throughput
+          ngcMetadata: Mzg4MTQwMjEzZWU5NjE1ZTY0M2JkYTA5ZDg1MDgyYTIxZjUxNjIyYzA3YmRlM2QwODExZDdjNjk5ODg3M2EwYjoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGdwdTogTDQwUwogICAgZ3B1X2RldmljZTogMjZiNToxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtbDQwc3gxLWZwMTYtbG9yYQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
+          sha: 388140213ee9615e643bda09d85082a21f51622c07bde3d0811d7c6998873a0b
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 16090021132
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: L40S
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 26b5:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/meta/llama3-8b-instruct:0.10.0+cbc614f5-h100x1-fp16-lora
+          framework: TensorRT-LLM
+          displayName: Llama 3 8B Instruct H100x1 FP16 LoRA Throughput
+          latestVersionSizeInBytes: 16090169549
+          ngcMetadata: M2JkZjY0NTZmZjIxYzE5ZDVjN2NjMzcwMTA3OTA0NDhhNGJlNjEzYTFmZDEyOTE2NjU1ZGZhYjVhMGRkOWI4ZToKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGdwdTogSDEwMAogICAgZ3B1X2RldmljZTogMjMzMDoxMGRlCiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICAgIHBwOiAnMScKICAgIHByZWNpc2lvbjogZnAxNgogICAgcHJvZmlsZTogdGhyb3VnaHB1dAogICAgdHA6ICcxJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDowLjEwLjArY2JjNjE0ZjUtaDEwMHgxLWZwMTYtbG9yYQogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY2hlY2tzdW1zLmJsYWtlMwogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1ldGFkYXRhLmpzb24KICAgICAgICAtICFuYW1lIHJhbmswLmVuZ2luZQogICAgICAgIC0gIW5hbWUgdHJ0X2xsbV9jb25maWcueWFtbA==
+          sha: 3bdf6456ff21c19d5c7cc37010790448a4be613a1fd12916655dfab5a0dd9b8e
+          modelFormat: trl-llm
+          spec:
+          - key: profile
+            value: Throughput
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: H100
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: 2330:10de
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
