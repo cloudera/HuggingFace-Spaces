@@ -1040,7 +1040,7 @@ models:
           - key: precision
             value: FP16
           - key: GPU
-            value: H100
+            value: A100
           - key: COUNT
             value: 2
           - key: GPU DEVICE
@@ -1128,7 +1128,7 @@ models:
           - key: precision
             value: FP16
           - key: GPU
-            value: H100
+            value: A100
           - key: COUNT
             value: 4
           - key: GPU DEVICE
@@ -1154,7 +1154,7 @@ models:
           - key: COUNT
             value: 4
           - key: GPU DEVICE
-            value: 20b2:10de
+            value: 2330:10de
           - key: "Nim Version"
             value: '1.0.0'
           - key: feat_lora
