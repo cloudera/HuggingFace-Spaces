@@ -1243,3 +1243,46 @@ models:
         - Other
       modelType: mistral
     license: NVIDIA AI Foundation Models Community License
+  - name: Embedding Model 
+    displayName: Embedding Model
+    type: NGC
+    description: Embedding Model that can be used with Clouder AI Inference Service
+    modelVariants:
+      - variantId: Embedding Model
+        displayName: Embedding Model
+        source:
+          URL: https://catalog.ngc.nvidia.com/containers
+        optimizationProfiles:
+        - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_onnx
+          displayName: Embedding Onnx
+          framework: ONNX
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGxsbV9lbmdpbmU6IG9ubngKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9udmlkaWEvbnYtZW1iZWRxYS1lNS12NTo1X3Rva2VuaXplcgogICAgICAtIGRzdDogb25ueAogICAgICAgIHNyYzoKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9udmlkaWEvbnYtZW1iZWRxYS1lNS12NTo1X0ZQMTZfb25ueA==
+          modelFormat: onnx
+          latestVersionSizeInBytes: 668847682
+        - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_A10_24GB
+          displayName: Embedding A10G
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGdwdTogQTEwRwogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV9GUDE2X0ExMF8yNEdC
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 672920180
+          spec:
+          - key: GPU
+            value: A10G
+        - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_A100_SXM4_80GB
+          displayName: Embedding A100
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGdwdTogQTEwMAogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV9GUDE2X0ExMDBfU1hNNF84MEdC
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 672515204
+          spec:
+          - key: GPU
+            value: A100
+        - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_H100_HBM3_80GB
+          displayName: Embedding H100
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGdwdTogSDEwMAogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV9GUDE2X0gxMDBfSEJNM184MEdC
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 675755740
+          spec:
+          - key: GPU
+            value: H100
