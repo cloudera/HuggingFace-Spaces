@@ -4,6 +4,12 @@ models:
     displayName: Llama 3 Instruct
     type: NGC
     description: Llama 3 is a large language AI model comprising a collection of models capable of generating text and code in response to prompts. Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. Token counts refer to pretraining data only. Both the 8 and 70B versions use Grouped-Query Attention (GQA) for improved inference scalability. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we took great care to optimize helpfulness and safety.
+    requireLicense: True
+    licenseAgreements:
+    - label: Use Policy
+      url: https://llama.meta.com/llama3/use-policy/
+    - label: License Agreement
+      url: https://llama.meta.com/llama3/license/
     modelVariants:
       - variantId: Llama 3 8B Instruct
         source:
