@@ -362,7 +362,95 @@ models:
       #     - key: "Nim Version"
       #       value: '1.0.0'
       #     - key: feat_lora
-      #       value: False     
+      #       value: False
+        - profileId: nim/meta/llama3-8b-instruct:hf
+          sha: 8835c31752fbc67ef658b20a9f78e056914fdef0660206d82f252d62fd96064d
+          displayName: Llama 3 8B Instruct vLLM FP16 (1xGPU)
+          modelFormat: vllm
+          ngcMetadata: ODgzNWMzMTc1MmZiYzY3ZWY2NThiMjBhOWY3OGUwNTY5MTRmZGVmMDY2MDIwNmQ4MmYyNTJkNjJmZDk2MDY0ZDoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgbGxtX2VuZ2luZTogdmxsbQogICAgcHJlY2lzaW9uOiBmcDE2CiAgICB0cDogJzEnCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAxLW9mLTAwMDA0LnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMi1vZi0wMDAwNC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDMtb2YtMDAwMDQuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA0LW9mLTAwMDA0LnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbg==
+          latestVersionSizeInBytes: 16069769486
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: fp16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/meta/llama3-8b-instruct:hf
+          sha: 19031a45cf096b683c4d66fff2a072c0e164a24f19728a58771ebfc4c9ade44f
+          displayName: Llama 3 8B Instruct vLLM FP16 (2xGPU)
+          modelFormat: vllm
+          ngcMetadata: MTkwMzFhNDVjZjA5NmI2ODNjNGQ2NmZmZjJhMDcyYzBlMTY0YTI0ZjE5NzI4YTU4NzcxZWJmYzRjOWFkZTQ0ZjoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgbGxtX2VuZ2luZTogdmxsbQogICAgcHJlY2lzaW9uOiBmcDE2CiAgICB0cDogJzInCiAgY29udGFpbmVyX3VybDogbnZjci5pby9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy04Yi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAxLW9mLTAwMDA0LnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMi1vZi0wMDAwNC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDMtb2YtMDAwMDQuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA0LW9mLTAwMDA0LnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbg==
+          latestVersionSizeInBytes: 16069769486
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: fp16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/meta/llama3-8b-instruct:hf
+          sha: 8d3824f766182a754159e88ad5a0bd465b1b4cf69ecf80bd6d6833753e945740
+          displayName: Llama 3 8B Instruct vLLM FP16 LoRA (1xGPU)
+          modelFormat: vllm
+          ngcMetadata: OGQzODI0Zjc2NjE4MmE3NTQxNTllODhhZDVhMGJkNDY1YjFiNGNmNjllY2Y4MGJkNmQ2ODMzNzUzZTk0NTc0MDoKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICcxJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDItb2YtMDAwMDQuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAzLW9mLTAwMDA0LnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24=
+          latestVersionSizeInBytes: 16069769486
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: fp16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/meta/llama3-8b-instruct:hf
+          sha: c5ffce8f82de1ce607df62a4b983e29347908fb9274a0b7a24537d6ff8390eb9
+          displayName: Llama 3 8B Instruct vLLM FP16 LoRA (2xGPU)
+          modelFormat: vllm
+          ngcMetadata: YzVmZmNlOGY4MmRlMWNlNjA3ZGY2MmE0Yjk4M2UyOTM0NzkwOGZiOTI3NGEwYjdhMjQ1MzdkNmZmODM5MGViOToKICBtb2RlbDogbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3QKICByZWxlYXNlOiAnMS4wLjAnCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICcyJwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLThiLWluc3RydWN0OjEuMC4wCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgLSBkc3Q6ICcnCiAgICAgIHNyYzoKICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWV0YS9sbGFtYTMtOGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDItb2YtMDAwMDQuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAzLW9mLTAwMDA0LnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbgogICAgICAgIC0gIW5hbWUgc3BlY2lhbF90b2tlbnNfbWFwLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplci5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXJfY29uZmlnLmpzb24=
+          latestVersionSizeInBytes: 16069769486
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: fp16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32              
       - variantId: Llama 3 70B Instruct
         displayName: 70B
         source:
@@ -626,6 +714,94 @@ models:
             value: False
           - key: COUNT
             value: 8
+        - profileId: nim/meta/llama3-70b-instruct:hf
+          sha: 7e8f6cc0d0fde672073a20d5423977a0a02a9b0693f0f3d4ffc2ec8ac35474d4
+          modelFormat: vllm
+          ngcMetadata: N2U4ZjZjYzBkMGZkZTY3MjA3M2EyMGQ1NDIzOTc3YTBhMDJhOWIwNjkzZjBmM2Q0ZmZjMmVjOGFjMzU0NzRkNDoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICc4JwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAxLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDMtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA0LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDYtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA3LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwOC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDktb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDEwLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxMS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTItb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDEzLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxNC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTUtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE2LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxNy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTgtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE5LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyMC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjEtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDIyLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyMy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjQtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI1LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyNi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjctb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI4LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyOS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMzAtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29u
+          displayName: Llama 3 70B Instruct FP16 (8xGPU)
+          latestVersionSizeInBytes: 141116746904
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+          - key: COUNT
+            value: 8
+        - profileId: nim/meta/llama3-70b-instruct:hf
+          sha: 0f3de1afe11d355e01657424a267fbaad19bfea3143a9879307c49aed8299db0
+          modelFormat: vllm
+          ngcMetadata: MGYzZGUxYWZlMTFkMzU1ZTAxNjU3NDI0YTI2N2ZiYWFkMTliZmVhMzE0M2E5ODc5MzA3YzQ5YWVkODI5OWRiMDoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICd0cnVlJwogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBsbG1fZW5naW5lOiB2bGxtCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHRwOiAnOCcKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDItb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAzLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDUtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA2LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDgtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA5LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxMC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTEtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDEyLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxMy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTQtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE1LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxNi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTctb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE4LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxOS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjAtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDIxLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyMi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjMtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI0LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyNS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjYtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI3LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyOC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjktb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDMwLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbg==
+          displayName: Llama 3 70B Instruct FP16 LoRA (8xGPU)
+          latestVersionSizeInBytes: 141116746904
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: COUNT
+            value: 8
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/meta/llama3-70b-instruct:hf
+          sha: a30aae0ed459082efed26a7f3bc21aa97cccad35509498b58449a52c27698544
+          modelFormat: vllm
+          ngcMetadata: YTMwYWFlMGVkNDU5MDgyZWZlZDI2YTdmM2JjMjFhYTk3Y2NjYWQzNTUwOTQ5OGI1ODQ0OWE1MmMyNzY5ODU0NDoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICd0cnVlJwogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBsbG1fZW5naW5lOiB2bGxtCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHRwOiAnNCcKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6MS4wLjAKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAtIGRzdDogJycKICAgICAgc3JjOgogICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9tZXRhL2xsYW1hMy03MGItaW5zdHJ1Y3Q6aGYKICAgICAgICBmaWxlczoKICAgICAgICAtICFuYW1lIGNvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBnZW5lcmF0aW9uX2NvbmZpZy5qc29uCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDItb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAzLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDUtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA2LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDgtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA5LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxMC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTEtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDEyLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxMy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTQtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE1LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxNi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTctb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE4LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxOS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjAtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDIxLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyMi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjMtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI0LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyNS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjYtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI3LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyOC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjktb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDMwLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uCiAgICAgICAgLSAhbmFtZSBzcGVjaWFsX3Rva2Vuc19tYXAuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyLmpzb24KICAgICAgICAtICFuYW1lIHRva2VuaXplcl9jb25maWcuanNvbg==
+          displayName: Llama 3 70B Instruct FP16 LoRA (4xGPU)
+          latestVersionSizeInBytes: 141116746904
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: COUNT
+            value: 4
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/meta/llama3-70b-instruct:hf
+          sha: df45ca2c979e5c64798908815381c59159c1d08066407d402f00c6d4abd5b108
+          modelFormat: vllm
+          ngcMetadata: ZGY0NWNhMmM5NzllNWM2NDc5ODkwODgxNTM4MWM1OTE1OWMxZDA4MDY2NDA3ZDQwMmYwMGM2ZDRhYmQ1YjEwODoKICBtb2RlbDogbWV0YS9sbGFtYTMtNzBiLWluc3RydWN0CiAgcmVsZWFzZTogJzEuMC4wJwogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICc0JwogIGNvbnRhaW5lcl91cmw6IG52Y3IuaW8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDoxLjAuMAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgIC0gZHN0OiAnJwogICAgICBzcmM6CiAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21ldGEvbGxhbWEzLTcwYi1pbnN0cnVjdDpoZgogICAgICAgIGZpbGVzOgogICAgICAgIC0gIW5hbWUgY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIGdlbmVyYXRpb25fY29uZmlnLmpzb24KICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDAxLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwMi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDMtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA0LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwNS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDYtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDA3LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAwOC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMDktb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDEwLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxMS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTItb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDEzLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxNC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTUtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE2LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAxNy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMTgtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDE5LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyMC1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjEtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDIyLW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyMy1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjQtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI1LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyNi1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMjctb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLTAwMDI4LW9mLTAwMDMwLnNhZmV0ZW5zb3JzCiAgICAgICAgLSAhbmFtZSBtb2RlbC0wMDAyOS1vZi0wMDAzMC5zYWZldGVuc29ycwogICAgICAgIC0gIW5hbWUgbW9kZWwtMDAwMzAtb2YtMDAwMzAuc2FmZXRlbnNvcnMKICAgICAgICAtICFuYW1lIG1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24KICAgICAgICAtICFuYW1lIHNwZWNpYWxfdG9rZW5zX21hcC5qc29uCiAgICAgICAgLSAhbmFtZSB0b2tlbml6ZXIuanNvbgogICAgICAgIC0gIW5hbWUgdG9rZW5pemVyX2NvbmZpZy5qc29u
+          displayName: Llama 3 70B Instruct FP16 (4xGPU)
+          latestVersionSizeInBytes: 141116746904
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+          - key: COUNT
+            value: 4
     labels:
       - Llama
       - Meta
@@ -944,6 +1120,98 @@ models:
         #     value: True
         #   - key: feat_lora_max_rank
         #     value: 32
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:hf
+          displayName: Mistral 7B Instruct FP16 LoRA (1xGPU)
+          framework: vLLM
+          ngcMetadata: MTE0ZmM2OGFkMmMxNTBlMzdlYjAzYTkxMTE1MmYzNDJlNGU3NDIzZDVlZmI3NjkzOTNkMzBmYTBiMGNkMWY5ZToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICcxJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAxLW9mLTAwMDAzLnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMi1vZi0wMDAwMy5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDMtb2YtMDAwMDMuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhm
+          sha: 114fc68ad2c150e37eb03a911152f342e4e7423d5efb769393d30fa0b0cd1f9e
+          modelFormat: vllm
+          latestVersionSizeInBytes: 14499492658
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:hf
+          displayName: Mistral 7B Instruct FP16 LoRA (2xGPU)
+          framework: vLLM
+          ngcMetadata: NTc5N2E1MTllMzAwNjEyZjg3ZjhhNGE1MGE0OTZhODQwZmE3NDdmNzgwMWIyZGNkMGNjOWEzYjRiOTQ5ZGQ5MjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICcyJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAxLW9mLTAwMDAzLnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMi1vZi0wMDAwMy5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDMtb2YtMDAwMDMuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3BhcmFtcy5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsLnYzJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAzOmhm
+          sha: 5797a519e300612f87f8a4a50a496a840fa747f7801b2dcd0cc9a3b4b949dd92
+          modelFormat: vllm
+          latestVersionSizeInBytes: 14499492658
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:hf
+          displayName: Mistral 7B Instruct FP16 (2xGPU)
+          framework: vLLM
+          ngcMetadata: NzM4Nzk3OWRhZTljMjA5YjMzMDEwZTVkYTlhYWU0YTk0Zjc1ZDkyODYzOWJhNDYyMjAxZTg4YTVkZDRhYzE4NToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgbGxtX2VuZ2luZTogdmxsbQogICAgcHJlY2lzaW9uOiBmcDE2CiAgICB0cDogJzInCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDEtb2YtMDAwMDMuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAyLW9mLTAwMDAzLnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMy1vZi0wMDAwMy5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncGFyYW1zLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwudjMnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6aGY=
+          sha: 7387979dae9c209b33010e5da9aae4a94f75d928639ba462201e88a5dd4ac185
+          modelFormat: vllm
+          latestVersionSizeInBytes: 14499492658
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mistral-7b-instruct-v03:hf
+          displayName: Mistral 7B Instruct FP16 (1xGPU)
+          framework: vLLM
+          ngcMetadata: NzY4MGI2NWRiM2RkZTZlYmIzY2IwNDVlOTE3NjQyNmIzMmQyZTE0MDIzZTYxZjFjZDIxMzcyMTZkZDFkYzc4OToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMwogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgbGxtX2VuZ2luZTogdmxsbQogICAgcHJlY2lzaW9uOiBmcDE2CiAgICB0cDogJzEnCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDEtb2YtMDAwMDMuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAyLW9mLTAwMDAzLnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMy1vZi0wMDAwMy5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAncGFyYW1zLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwudjMnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWlzdHJhbC03Yi1pbnN0cnVjdC12MDM6aGY=
+          sha: 7680b65db3dde6ebb3cb045e9176426b32d2e14023e61f1cd2137216dd1dc789
+          modelFormat: vllm
+          latestVersionSizeInBytes: 14499492658
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 1
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
     labels:
       - "Mistral"
       - "Instruct"
@@ -1165,6 +1433,98 @@ models:
             value: '1.0.0'
           - key: feat_lora
             value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:hf-a60832c-b
+          displayName: Mixtral 8x7B Instruct FP16 LoRA (4xGPU)
+          framework: vLLM
+          ngcMetadata: MjI4OWIyOTUwN2Q5ODcxNTRlZmI1ZmYxMmI0MTM3ODMyMzE0N2UyOGJhMjY2MDQ5MDczN2NiOGQ4NTQ0ZDAzOToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICd0cnVlJwogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBsbG1fZW5naW5lOiB2bGxtCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHRwOiAnNCcKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAxLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMi1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDMtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA0LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwNS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDYtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA3LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwOC1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDktb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDEwLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxMS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTItb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDEzLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNC1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTUtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE2LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNy1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTgtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE5LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyX2NvbmZpZy5qc29uJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXh0cmFsLTh4N2ItaW5zdHJ1Y3QtdjAxOmhmLWE2MDgzMmMtYg==
+          sha: 2289b29507d987154efb5ff12b41378323147e28ba2660490737cb8d8544d039
+          modelFormat: vllm
+          latestVersionSizeInBytes: 93408109469
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 4
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:hf-a60832c-b
+          displayName: Mixtral 8x7B Instruct FP16 (2xGPU)
+          framework: vLLM
+          ngcMetadata: MzdkMWE2MjEwMzU3NzcwZjdmNmZlNWZjZGI1ZjhkYTExZTM4NjNhNzI3NGNjZGU4ZmY5N2U0ZmZjN2QxNzAwNjoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICcyJwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDEtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAyLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMy1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDQtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA1LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwNi1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDctb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA4LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwOS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTAtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDExLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxMi1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTMtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE0LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTYtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE3LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxOC1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTktb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6aGYtYTYwODMyYy1i
+          sha: 37d1a6210357770f7f6fe5fcdb5f8da11e3863a7274ccde8ff97e4ffc7d17006
+          modelFormat: vllm
+          latestVersionSizeInBytes: 93408109469
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:hf-a60832c-b
+          displayName: Mixtral 8x7B Instruct FP16 LoRA (2xGPU)
+          framework: vLLM
+          ngcMetadata: YTBhZmYwZTNiZjIwNjJjYzQyZjEzNTU2YjI4ZWI2NmEwNzY0ZDhkNTdjNDJjMjBkZDg4MTRmOTE5MTE4YTEyNzoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICd0cnVlJwogICAgZmVhdF9sb3JhX21heF9yYW5rOiAnMzInCiAgICBsbG1fZW5naW5lOiB2bGxtCiAgICBwcmVjaXNpb246IGZwMTYKICAgIHRwOiAnMicKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIGZpbGVzOgogICAgICAgICAgICAtICFuYW1lICdOT1RJQ0UnCiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAxLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMi1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDMtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA0LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwNS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDYtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA3LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwOC1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDktb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDEwLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxMS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTItb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDEzLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNC1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTUtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE2LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNy1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTgtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE5LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyX2NvbmZpZy5qc29uJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXh0cmFsLTh4N2ItaW5zdHJ1Y3QtdjAxOmhmLWE2MDgzMmMtYg==
+          sha: a0aff0e3bf2062cc42f13556b28eb66a0764d8d57c42c20dd8814f919118a127
+          modelFormat: vllm
+          latestVersionSizeInBytes: 93408109469
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
+        - profileId: nim/mistralai/mixtral-8x7b-instruct-v01:hf-a60832c-b
+          displayName: Mixtral 8x7B Instruct FP16 (4xGPU)
+          framework: vLLM
+          ngcMetadata: ZGE3NjdlMThkNjZlMDY3ZjJjNWMyYzIyNTcxNzFiOGI4MzMxODAxZmZmZGVhOThmYzhlNDhiODk1ODU0OTM4ODoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwMToxLjAuMAogIG1vZGVsOiBtaXN0cmFsYWkvbWl4dHJhbC04eDdiLWluc3RydWN0LXYwLjEKICByZWxlYXNlOiAxLjAuMAogIHRhZ3M6CiAgICBmZWF0X2xvcmE6ICdmYWxzZScKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICc0JwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ05PVElDRScKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDEtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAyLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMy1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDQtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA1LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwNi1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDctb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA4LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwOS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTAtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDExLW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxMi1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTMtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE0LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNS1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTYtb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE3LW9mLTAwMDE5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxOC1vZi0wMDAxOS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTktb2YtMDAwMTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3NwZWNpYWxfdG9rZW5zX21hcC5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLm1vZGVsJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXJfY29uZmlnLmpzb24nCiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbWlzdHJhbGFpL21peHRyYWwtOHg3Yi1pbnN0cnVjdC12MDE6aGYtYTYwODMyYy1i
+          sha: da767e18d66e067f2c5c2c2257171b8b8331801fffdea98fc8e48b8958549388
+          modelFormat: vllm
+          latestVersionSizeInBytes: 93408109469
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 2
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
       - variantId: Mixtral 8x22B Instruct
         displayName: Mixtral 8x22B Instruct
         source:
@@ -1236,6 +1596,52 @@ models:
             value: '1.0.0'
           - key: feat_lora
             value: False
+        - profileId: nim/mistralai/mixtral-8x22b-instruct-v01:hf-52572b2
+          displayName: Mixtral 8x22B Instruct FP16 (8xGPU)
+          framework: vLLM
+          ngcMetadata: OGI0MjUzYjY1OGU3NmIyMjFhZDk4ZjllYTE4NmU3ZTIyMTg4YzA5MmZkNGZiZTNkODhjYjMxNDc3N2ZmYWU0MToKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21peHRyYWwtOHgyMmItaW5zdHJ1Y3QtdjAuMQogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ2ZhbHNlJwogICAgbGxtX2VuZ2luZTogdmxsbQogICAgcHJlY2lzaW9uOiBmcDE2CiAgICB0cDogJzgnCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICBmaWxlczoKICAgICAgICAgICAgLSAhbmFtZSAnUkVBRE1FLm1kJwogICAgICAgICAgICAtICFuYW1lICdjaGVja3N1bXMuYmxha2UzJwogICAgICAgICAgICAtICFuYW1lICdjb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnZ2VuZXJhdGlvbl9jb25maWcuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDEtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAyLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMy1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDQtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA1LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwNi1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDctb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA4LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwOS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTAtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDExLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxMi1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTMtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE0LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTYtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE3LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxOC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTktb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDIwLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAyMS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMjItb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDIzLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAyNC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMjUtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDI2LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAyNy1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMjgtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDI5LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAzMC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMzEtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDMyLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAzMy1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMzQtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDM1LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAzNi1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMzctb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDM4LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAzOS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNDAtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDQxLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA0Mi1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNDMtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDQ0LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA0NS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNDYtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDQ3LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA0OC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNDktb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDUwLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA1MS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNTItb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDUzLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA1NC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNTUtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDU2LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA1Ny1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNTgtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDU5LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC5zYWZldGVuc29ycy5pbmRleC5qc29uJwogICAgICAgICAgICAtICFuYW1lICdzcGVjaWFsX3Rva2Vuc19tYXAuanNvbicKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5tb2RlbCcKICAgICAgICAgICAgLSAhbmFtZSAndG9rZW5pemVyX2NvbmZpZy5qc29uJwogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL21pc3RyYWxhaS9taXh0cmFsLTh4MjJiLWluc3RydWN0LXYwMTpoZi01MjU3MmIy
+          sha: 8b4253b658e76b221ad98f9ea186e7e22188c092fd4fbe3d88cb314777ffae41
+          modelFormat: vllm
+          latestVersionSizeInBytes: 281263232418
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 8
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: False
+        - profileId: nim/mistralai/mixtral-8x22b-instruct-v01:hf-52572b2
+          displayName: Mixtral 8x22B Instruct FP16 LoRA (8xGPU)
+          framework: vLLM
+          ngcMetadata: ZjM0NjVkNjc0YmExYTIxOTA3MjUyMTU3NDE2YTRjNDUxNGU4ZmI2NmRhYWY2NDMyZTBhZTE1NTNmOTIxZDY1ODoKICBjb250YWluZXJfdXJsOiBudmNyLmlvL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6MS4wLjAKICBtb2RlbDogbWlzdHJhbGFpL21peHRyYWwtOHgyMmItaW5zdHJ1Y3QtdjAuMQogIHJlbGVhc2U6IDEuMC4wCiAgdGFnczoKICAgIGZlYXRfbG9yYTogJ3RydWUnCiAgICBmZWF0X2xvcmFfbWF4X3Jhbms6ICczMicKICAgIGxsbV9lbmdpbmU6IHZsbG0KICAgIHByZWNpc2lvbjogZnAxNgogICAgdHA6ICc4JwogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgZmlsZXM6CiAgICAgICAgICAgIC0gIW5hbWUgJ1JFQURNRS5tZCcKICAgICAgICAgICAgLSAhbmFtZSAnY2hlY2tzdW1zLmJsYWtlMycKICAgICAgICAgICAgLSAhbmFtZSAnY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ2dlbmVyYXRpb25fY29uZmlnLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDAxLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwMi1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDMtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA0LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwNS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDYtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDA3LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAwOC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMDktb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDEwLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxMS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTItb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDEzLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTUtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE2LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAxNy1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMTgtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDE5LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAyMC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMjEtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDIyLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAyMy1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMjQtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDI1LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAyNi1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMjctb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDI4LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAyOS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMzAtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDMxLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAzMi1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMzMtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDM0LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAzNS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMzYtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDM3LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDAzOC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwMzktb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDQwLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA0MS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNDItb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDQzLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA0NC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNDUtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDQ2LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA0Ny1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNDgtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDQ5LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA1MC1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNTEtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDUyLW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA1My1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNTQtb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDU1LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA1Ni1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwtMDAwNTctb2YtMDAwNTkuc2FmZXRlbnNvcnMnCiAgICAgICAgICAgIC0gIW5hbWUgJ21vZGVsLTAwMDU4LW9mLTAwMDU5LnNhZmV0ZW5zb3JzJwogICAgICAgICAgICAtICFuYW1lICdtb2RlbC0wMDA1OS1vZi0wMDA1OS5zYWZldGVuc29ycycKICAgICAgICAgICAgLSAhbmFtZSAnbW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbicKICAgICAgICAgICAgLSAhbmFtZSAnc3BlY2lhbF90b2tlbnNfbWFwLmpzb24nCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplci5qc29uJwogICAgICAgICAgICAtICFuYW1lICd0b2tlbml6ZXIubW9kZWwnCiAgICAgICAgICAgIC0gIW5hbWUgJ3Rva2VuaXplcl9jb25maWcuanNvbicKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9taXN0cmFsYWkvbWl4dHJhbC04eDIyYi1pbnN0cnVjdC12MDE6aGYtNTI1NzJiMg==
+          sha: f3465d674ba1a21907252157416a4c4514e8fb66daaf6432e0ae1553f921d658
+          modelFormat: vllm
+          latestVersionSizeInBytes: 281263232418
+          spec:
+          - key: profile
+            value: NA
+          - key: precision
+            value: FP16
+          - key: GPU
+            value: any
+          - key: COUNT
+            value: 8
+          - key: GPU DEVICE
+            value: any
+          - key: "Nim Version"
+            value: '1.0.0'
+          - key: feat_lora
+            value: True
+          - key: feat_lora_max_rank
+            value: 32
     labels:
       - "Mistral"
       - "Instruct"
