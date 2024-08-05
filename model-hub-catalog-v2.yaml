@@ -1286,3 +1286,10 @@ models:
           spec:
           - key: GPU
             value: H100
+    labels:
+      - embedding
+    config:
+      architectures:
+        - Other
+      modelType: embedding
+    license: NVIDIA AI Foundation Models Community License
