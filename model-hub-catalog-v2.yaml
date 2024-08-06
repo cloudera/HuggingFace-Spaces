@@ -1710,19 +1710,19 @@ models:
     type: NGC
     description: Mistral Embedding Model that can be used with Clouder AI Inference Service
     modelVariants:
-      - variantId: Mistral Embedding Model
-        displayName: Mistral Embedding Model
+      - variantId: Mistral 7B Embedding
+        displayName: Mistral 7B Embedding
         source:
           URL: https://catalog.ngc.nvidia.com/containers
         optimizationProfiles:
         - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP16_onnx
-          displayName: Mistral Embedding Onnx FP16
+          displayName: Mistral 7B Embedding Onnx FP16
           framework: ONNX
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogb25ueAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL252aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjI6Ml90b2tlbml6ZXJfNTEyCiAgICAgIC0gZHN0OiBvbm54CiAgICAgICAgc3JjOgogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL252aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjI6Ml9GUDE2X29ubng=
           modelFormat: onnx
           latestVersionSizeInBytes: 14239651604
         - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP16_A100_SXM4_80GB
-          displayName: Mistral Embedding A100
+          displayName: Mistral 7B Embedding A100
           framework: TensorRT-LLM
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX3Rva2VuaXplcl81MTIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX0ZQMTZfQTEwMF9TWE00XzgwR0I=
           modelFormat: trl-llm
@@ -1731,7 +1731,7 @@ models:
           - key: GPU
             value: A100
         - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP8_H100_HBM3_80GB
-          displayName: Mistral Embedding H100 FP8
+          displayName: Mistral 7B Embedding H100 FP8
           framework: TensorRT-LLM
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX3Rva2VuaXplcl81MTIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX0ZQOF9IMTAwX0hCTTNfODBHQg==
           modelFormat: trl-llm
@@ -1740,7 +1740,7 @@ models:
           - key: GPU
             value: H100
         - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP16_H100_HBM3_80GB
-          displayName: Mistral Embedding H100 FP16
+          displayName: Mistral 7B Embedding H100 FP16
           framework: TensorRT-LLM
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX3Rva2VuaXplcl81MTIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX0ZQMTZfSDEwMF9IQk0zXzgwR0I=
           modelFormat: trl-llm
