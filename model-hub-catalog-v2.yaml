@@ -1666,13 +1666,13 @@ models:
           URL: https://catalog.ngc.nvidia.com/containers
         optimizationProfiles:
         - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_onnx
-          displayName: Embedding Onnx
+          displayName: Embedding Onnx FP16
           framework: ONNX
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGxsbV9lbmdpbmU6IG9ubngKICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9udmlkaWEvbnYtZW1iZWRxYS1lNS12NTo1X3Rva2VuaXplcgogICAgICAtIGRzdDogb25ueAogICAgICAgIHNyYzoKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9udmlkaWEvbnYtZW1iZWRxYS1lNS12NTo1X0ZQMTZfb25ueA==
           modelFormat: onnx
           latestVersionSizeInBytes: 668847682
         - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_A10_24GB
-          displayName: Embedding A10G
+          displayName: Embedding A10G FP16
           framework: TensorRT-LLM
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGdwdTogQTEwRwogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV9GUDE2X0ExMF8yNEdC
           modelFormat: trl-llm
@@ -1681,7 +1681,7 @@ models:
           - key: GPU
             value: A10G
         - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_A100_SXM4_80GB
-          displayName: Embedding A100
+          displayName: Embedding A100 FP16
           framework: TensorRT-LLM
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGdwdTogQTEwMAogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV9GUDE2X0ExMDBfU1hNNF84MEdC
           modelFormat: trl-llm
@@ -1690,7 +1690,7 @@ models:
           - key: GPU
             value: A100
         - profileId: nim/nvidia/nv-embedqa-e5-v5:5_FP16_H100_HBM3_80GB
-          displayName: Embedding H100
+          displayName: Embedding H100 FP16
           framework: TensorRT-LLM
           ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLWU1LXY1CiAgdGFnczoKICAgIGdwdTogSDEwMAogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtZTUtdjU6NV9GUDE2X0gxMDBfSEJNM184MEdC
           modelFormat: trl-llm
@@ -1700,6 +1700,109 @@ models:
             value: H100
     labels:
       - embedding
+    config:
+      architectures:
+        - Other
+      modelType: embedding
+    license: NVIDIA AI Foundation Models Community License
+  - name: Mistral Embedding Model 
+    displayName: Mistral Embedding Model
+    type: NGC
+    description: Mistral Embedding Model that can be used with Clouder AI Inference Service
+    modelVariants:
+      - variantId: Mistral Embedding Model
+        displayName: Mistral Embedding Model
+        source:
+          URL: https://catalog.ngc.nvidia.com/containers
+        optimizationProfiles:
+        - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP16_onnx
+          displayName: Mistral Embedding Onnx FP16
+          framework: ONNX
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogb25ueAogIHdvcmtzcGFjZTogIXdvcmtzcGFjZQogICAgY29tcG9uZW50czoKICAgICAgLSBkc3Q6ICcnCiAgICAgICAgc3JjOgogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL252aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjI6Ml90b2tlbml6ZXJfNTEyCiAgICAgIC0gZHN0OiBvbm54CiAgICAgICAgc3JjOgogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL252aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjI6Ml9GUDE2X29ubng=
+          modelFormat: onnx
+          latestVersionSizeInBytes: 14239651604
+        - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP16_A100_SXM4_80GB
+          displayName: Mistral Embedding A100
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX3Rva2VuaXplcl81MTIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX0ZQMTZfQTEwMF9TWE00XzgwR0I=
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14254672452
+          spec:
+          - key: GPU
+            value: A100
+        - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP8_H100_HBM3_80GB
+          displayName: Mistral Embedding H100 FP8
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX3Rva2VuaXplcl81MTIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX0ZQOF9IMTAwX0hCTTNfODBHQg==
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 7271196548
+          spec:
+          - key: GPU
+            value: H100
+        - profileId: nim/nvidia/nv-embedqa-mistral-7b-v2:2_FP16_H100_HBM3_80GB
+          displayName: Mistral Embedding H100 FP16
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IG52aWRpYS9udi1lbWJlZHFhLW1pc3RyYWwtN2ItdjIKICB0YWdzOgogICAgbGxtX2VuZ2luZTogdGVuc29ycnRfbGxtCiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX3Rva2VuaXplcl81MTIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vbnZpZGlhL252LWVtYmVkcWEtbWlzdHJhbC03Yi12MjoyX0ZQMTZfSDEwMF9IQk0zXzgwR0I=
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 14266992708
+          spec:
+          - key: GPU
+            value: H100
+    labels:
+      - embedding
+      - mistral
+    config:
+      architectures:
+        - Other
+      modelType: embedding
+    license: NVIDIA AI Foundation Models Community License  
+  - name: Arctic Embedding Model 
+    displayName: Arctic Embedding Model
+    type: NGC
+    description: Arctic Embedding Model that can be used with Clouder AI Inference Service
+    modelVariants:
+      - variantId: Arctic Embedding Model
+        displayName: Arctic Embedding Model
+        source:
+          URL: https://catalog.ngc.nvidia.com/containers
+        optimizationProfiles:
+        - profileId: nim/snowflake/arctic-embed-l:2_FP16_onnx
+          displayName: Arctic Embedding Onnx FP16
+          framework: ONNX
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IHNub3dmbGFrZS9hcmN0aWMtZW1iZWQtbAogIHRhZ3M6CiAgICBsbG1fZW5naW5lOiBvbm54CiAgd29ya3NwYWNlOiAhd29ya3NwYWNlCiAgICBjb21wb25lbnRzOgogICAgICAtIGRzdDogJycKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vc25vd2ZsYWtlL2FyY3RpYy1lbWJlZC1sOjJfdG9rZW5pemVyCiAgICAgIC0gZHN0OiBvbm54CiAgICAgICAgc3JjOgogICAgICAgICAgcmVwb19pZDogbmdjOi8vbmltL3Nub3dmbGFrZS9hcmN0aWMtZW1iZWQtbDoyX0ZQMTZfb25ueA==
+          modelFormat: onnx
+          latestVersionSizeInBytes: 668844074
+        - profileId: nim/snowflake/arctic-embed-l:2_TRT_FP16_A10_24GB
+          displayName: Arctic Embedding A10 FP16
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IHNub3dmbGFrZS9hcmN0aWMtZW1iZWQtbAogIHRhZ3M6CiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9zbm93Zmxha2UvYXJjdGljLWVtYmVkLWw6Ml90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vc25vd2ZsYWtlL2FyY3RpYy1lbWJlZC1sOjJfVFJUX0ZQMTZfQTEwXzI0R0I=
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 672775036
+          spec:
+          - key: GPU
+            value: A10
+        - profileId: nim/snowflake/arctic-embed-l:2_TRT_FP16_A100_SXM4_80GB
+          displayName: Arctic Embedding A100 FP16
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IHNub3dmbGFrZS9hcmN0aWMtZW1iZWQtbAogIHRhZ3M6CiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9zbm93Zmxha2UvYXJjdGljLWVtYmVkLWw6Ml90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vc25vd2ZsYWtlL2FyY3RpYy1lbWJlZC1sOjJfVFJUX0ZQMTZfQTEwMF9TWE00XzgwR0I=
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 672504692
+          spec:
+          - key: GPU
+            value: A100
+        - profileId: nim/snowflake/arctic-embed-l:2_TRT_FP16_H100_HBM3_80GB
+          displayName: Arctic Embedding H100 FP16
+          framework: TensorRT-LLM
+          ngcMetadata: bm90X2FfdmFsaWRfc2hhOgogIGNvbnRhaW5lcl91cmw6IGh0dHBzOi8vY2F0YWxvZy5uZ2MubnZpZGlhLmNvbS9jb250YWluZXJzCiAgbW9kZWw6IHNub3dmbGFrZS9hcmN0aWMtZW1iZWQtbAogIHRhZ3M6CiAgICBsbG1fZW5naW5lOiB0ZW5zb3JydF9sbG0KICB3b3Jrc3BhY2U6ICF3b3Jrc3BhY2UKICAgIGNvbXBvbmVudHM6CiAgICAgIC0gZHN0OiAnJwogICAgICAgIHNyYzoKICAgICAgICAgIHJlcG9faWQ6IG5nYzovL25pbS9zbm93Zmxha2UvYXJjdGljLWVtYmVkLWw6Ml90b2tlbml6ZXIKICAgICAgLSBkc3Q6IHRydGxsbV9lbmdpbmUKICAgICAgICBzcmM6CiAgICAgICAgICByZXBvX2lkOiBuZ2M6Ly9uaW0vc25vd2ZsYWtlL2FyY3RpYy1lbWJlZC1sOjJfVFJUX0ZQMTZfSDEwMF9IQk0zXzgwR0I=
+          modelFormat: trl-llm
+          latestVersionSizeInBytes: 675743684
+          spec:
+          - key: GPU
+            value: H100
+    labels:
+      - embedding
+      - arctic
+      - snowflake
     config:
       architectures:
         - Other
@@ -2554,4 +2657,3 @@ models:
         - Other
       modelType: llama
     license: NVIDIA AI Foundation Models Community License
-
