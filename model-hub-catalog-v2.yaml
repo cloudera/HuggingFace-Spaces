@@ -1658,7 +1658,7 @@ models:
   - name: Embedding Model 
     displayName: Embedding Model
     type: NGC
-    description: Embedding Model that can be used with Clouder AI Inference Service
+    description: Embedding Model that can be used with Cloudera AI Inference Service
     modelVariants:
       - variantId: Embedding Model
         displayName: Embedding Model
@@ -1708,7 +1708,7 @@ models:
   - name: Mistral Embedding Model 
     displayName: Mistral Embedding Model
     type: NGC
-    description: Mistral Embedding Model that can be used with Clouder AI Inference Service
+    description: Mistral Embedding Model that can be used with Cloudera AI Inference Service
     modelVariants:
       - variantId: Mistral 7B Embedding
         displayName: Mistral 7B Embedding
@@ -1759,7 +1759,7 @@ models:
   - name: Arctic Embedding Model 
     displayName: Arctic Embedding Model
     type: NGC
-    description: Arctic Embedding Model that can be used with Clouder AI Inference Service
+    description: Arctic Embedding Model that can be used with Cloudera AI Inference Service
     modelVariants:
       - variantId: Arctic Embedding Model
         displayName: Arctic Embedding Model
