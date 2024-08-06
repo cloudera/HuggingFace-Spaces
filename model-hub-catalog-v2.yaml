@@ -1709,6 +1709,12 @@ models:
     displayName: Llama 3.1 
     type: NGC
     description: The Llama 3.1 70B-Instruct, 8B instruct and 8B base NIM simplifies the deployment of the Llama 3.1 70B-Instruct, 8B instruct and 8B base tuned models which is optimized for language understanding, reasoning, and text generation use cases, and outperforms many of the available open source chat models on common industry benchmarks.
+    requireLicense: True
+    licenseAgreements:
+    - label: Use Policy
+      url: https://llama.meta.com/llama3/use-policy/
+    - label: License Agreement
+      url: https://llama.meta.com/llama3/license/
     modelVariants:
       - variantId: Llama 3.1 70B Instruct
         source:
