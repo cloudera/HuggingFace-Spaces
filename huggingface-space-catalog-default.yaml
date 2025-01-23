@@ -147,18 +147,18 @@ entries:
     is_prototype: true
     is_huggingface_space: true
     is_new: true
-  - title: Open LLM Leaderboard 2
-    label: open-LLM-2
-    short_description: Compare and select top performing models in the leaderboard.
+  - title: LLMLingua-2
+    label: LLMLingua
+    short_description: Efficient and Faithful Task-Agnostic Prompt Compression via Data Distillation
     long_description: >-
-      The 🤗 Open LLM Leaderboard is a platform dedicated to tracking, ranking, and evaluating open Large Language Models (LLMs) and chatbots. It offers a system for automated model evaluation on the 🤗 GPU cluster. The leaderboard uses Eleuther AI's Language Model Evaluation Harness, detailed in the "About" page.
+      LLMLingua-2, a small-size yet powerful prompt compression method trained via data distillation from GPT-4 for token classification with a BERT-level encoder, excels in task-agnostic compression. It surpasses LLMLingua in handling out-of-domain data, offering 3x-6x faster performance
     image_path: >-
-      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/llm-leaderboard.png
+      https://raw.githubusercontent.com/cloudera/HuggingFace-Spaces/master/images/llmlingua.png
     tags:
       - Gradio
       - Space
       - LLM
-    git_url: "https://huggingface.co/spaces/smothiki/open_llm_leaderboard2"
+    git_url: "https://huggingface.co/spaces/microsoft/llmlingua-2"
     is_prototype: true
     is_huggingface_space: true
     is_new: true
@@ -167,7 +167,7 @@ entries:
         default: 2
         description: "Number of CPUs"
       memory:
-        default: 16
+        default: 8
         description: "Memory in GB"
       gpu:
         default: 0
